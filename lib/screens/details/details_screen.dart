@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gigi_store/models/products.dart';
+import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/details/components/body.dart';
 
 import 'components/custom_app_bar.dart';

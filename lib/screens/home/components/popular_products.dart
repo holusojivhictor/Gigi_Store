@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/product_card.dart';
-import 'package:gigi_store/models/products.dart';
+import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/details/details_screen.dart';
 import 'package:gigi_store/screens/home/components/section_title.dart';
 

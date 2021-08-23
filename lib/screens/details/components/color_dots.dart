@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/rounded_icon_btn.dart';
-import 'package:gigi_store/models/products.dart';
+import 'package:gigi_store/models/Products.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';

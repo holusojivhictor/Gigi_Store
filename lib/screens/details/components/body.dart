@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/default_button.dart';
 import 'package:gigi_store/constants.dart';
-import 'package:gigi_store/models/products.dart';
+import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/details/components/product_description.dart';
 import 'package:gigi_store/screens/details/components/product_images.dart';
 import 'package:gigi_store/screens/details/components/top_rounded_container.dart';
