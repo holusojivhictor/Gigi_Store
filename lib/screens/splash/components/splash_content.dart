@@ -5,8 +5,8 @@ import '../../../size_config.dart';
 
 class SplashContent extends StatelessWidget {
 
-  final String? text, image;
-  const SplashContent({required this.image, required this.text});
+  final String? text, image, title;
+  const SplashContent({required this.image, required this.text, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,18 @@ class SplashContent extends StatelessWidget {
         Spacer(flex: 2),
         Padding(
           padding: const EdgeInsets.all(Constants.kPadding),
-          child: Text(text!,style: TextStyle(fontSize: getProportionateScreenWidth(7)), textAlign: TextAlign.center),
+          child: Text(title!,style: TextStyle(
+            fontSize: getProportionateScreenWidth(9),
+            fontWeight: FontWeight.bold,
+          ),
+              textAlign: TextAlign.center),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(Constants.kPadding),
+          child: Text(text!,style: TextStyle(
+            fontSize: getProportionateScreenWidth(7),
+          ),
+              textAlign: TextAlign.center),
         ),
       ],
     );
