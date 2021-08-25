@@ -8,7 +8,6 @@ import 'package:gigi_store/screens/details/components/related_items.dart';
 import 'package:gigi_store/screens/details/components/top_rounded_container.dart';
 import 'package:gigi_store/size_config.dart';
 
-import 'color_dots.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -28,36 +27,30 @@ class Body extends StatelessWidget {
                   product: product,
                   pressOnSeeMore: () {},
                 ),
-                TopRoundedContainer(
-                  color: Color(0xFFF6F7F9),
-                  child: Column(
-                    children: [
-                      ColorDots(product: product),
-                      TopRoundedContainer(
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: SizeConfig.screenWidth! * 0.15,
-                                right: SizeConfig.screenWidth! * 0.15,
-                                top: getProportionateScreenWidth(8),
-                                bottom: getProportionateScreenWidth(10),
-                              ),
-                              child: DefaultButton(
-                                text: "Add to Cart",
-                                press: () {},
-                              ),
+                Column(
+                  children: [
+                    TopRoundedContainer(
+                      color: Colors.white,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(
+                              left: SizeConfig.screenWidth! * 0.15,
+                              right: SizeConfig.screenWidth! * 0.15,
                             ),
-                            TopRoundedContainer(
-                              color: Colors.white,
-                              child: RelatedItems(),
+                            child: DefaultButton(
+                              text: "Add to Cart",
+                              press: () {},
                             ),
-                          ],
-                        ),
+                          ),
+                          TopRoundedContainer(
+                            color: Colors.white,
+                            child: RelatedItems(),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 )
               ],
             ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gigi_store/models/ProductsColors.dart';
 
 class Product {
-  final ProductsColors productsColors;
+  final AllProductsColors productsColors;
   final String title, description, price;
   final List<String> images;
   final List<Color> colors;
@@ -38,7 +38,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    productsColors: demoProductsColors[0],
+    productsColors: allProductsColors[0],
     title: "Wireless Controller for PS4",
     description: description,
     price: r"$64.99",
@@ -56,7 +56,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    productsColors: demoProductsColors[0],
+    productsColors: allProductsColors[1],
     title: "Nike Sport White - Man Pant",
     description: description,
     price: r"$50.99",
@@ -73,7 +73,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    productsColors: demoProductsColors[0],
+    productsColors: allProductsColors[2],
     title: "Gloves XC Omega - Polygon",
     description: description,
     price: r"$36.99",
@@ -91,7 +91,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    productsColors: demoProductsColors[0],
+    productsColors: allProductsColors[3],
     title: "H800 Logitech Headset",
     description: description,
     price: r"$20.99",

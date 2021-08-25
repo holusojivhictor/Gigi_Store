@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:gigi_store/components/rounded_icon_btn.dart';
 import 'package:gigi_store/models/Products.dart';
+import 'package:gigi_store/screens/details/components/top_rounded_container.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
+import 'color_dots.dart';
 
 class ProductImages extends StatefulWidget {
   const ProductImages({
@@ -18,6 +21,8 @@ class ProductImages extends StatefulWidget {
 
 class _ProductImagesState extends State<ProductImages> {
   int selectedImage = 0;
+
+  int selectedColor = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,19 +31,54 @@ class _ProductImagesState extends State<ProductImages> {
           width: getProportionateScreenWidth(120),
           child: AspectRatio(
             aspectRatio: 1,
-            child: Image.asset(widget.product.images[selectedImage]),
+            child: Image.asset(widget.product.productsColors.allProductsColors[selectedColor].productsColorsType.images[selectedImage]),
           ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ...List.generate(
-              widget.product.images.length,
+              widget.product.productsColors.allProductsColors[selectedColor].productsColorsType.images.length,
                   (index) => buildSmallPreview(index),
             ),
           ],
         ),
+        TopRoundedContainer(
+          color: Color(0xFFF6F7F9),
+          child: Padding(
+            padding: EdgeInsets.only(
+              left: getProportionateScreenWidth(10),
+              right: getProportionateScreenWidth(10),
+              bottom: getProportionateScreenWidth(5),
+            ),
+            child: Row(
+              children: [
+                ...List.generate(
+                  widget.product.colors.length,
+                      (index) => buildColorDots(index),
+                ),
+                Spacer(),
+                RoundedIconBtn(press: () {}, icon: Icons.remove),
+                SizedBox(width: getProportionateScreenWidth(6)),
+                RoundedIconBtn(press: () {}, icon: Icons.add),
+              ],
+            ),
+          ),
+        ),
       ],
+    );
+  }
+
+  GestureDetector buildColorDots(int index) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selectedColor = index;
+        });
+      },
+      child: ColorDot(color: widget.product.colors[index],
+        isSelected: selectedColor == index,
+      ),
     );
   }
 
@@ -62,8 +102,10 @@ class _ProductImagesState extends State<ProductImages> {
               : Colors.transparent,
           ),
         ),
-        child: Image.asset(widget.product.images[index]),
+        child: Image.asset(widget.product.productsColors.allProductsColors[selectedColor].productsColorsType.images[index]),
       ),
     );
   }
 }
+
+//demoProductsColorsPad[selectedColor].productsColorsType.images[selectedImage]

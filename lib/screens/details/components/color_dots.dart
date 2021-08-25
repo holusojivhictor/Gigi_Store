@@ -5,7 +5,7 @@ import 'package:gigi_store/models/Products.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
-class ColorDots extends StatelessWidget {
+class ColorDots extends StatefulWidget {
   const ColorDots({
     Key? key,
     required this.product,
@@ -14,8 +14,13 @@ class ColorDots extends StatelessWidget {
   final Product product;
 
   @override
+  _ColorDotsState createState() => _ColorDotsState();
+}
+
+class _ColorDotsState extends State<ColorDots> {
+  int selectedColor = 0;
+  @override
   Widget build(BuildContext context) {
-    int selectedColor = 3;
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: getProportionateScreenWidth(10),
@@ -23,10 +28,8 @@ class ColorDots extends StatelessWidget {
       child: Row(
         children: [
           ...List.generate(
-            product.colors.length,
-                (index) => ColorDot(color: product.colors[index],
-              isSelected: selectedColor == index,
-            ),
+            widget.product.colors.length,
+                (index) => buildColorDots(index),
           ),
           Spacer(),
           RoundedIconBtn(press: () {}, icon: Icons.remove),
@@ -34,6 +37,19 @@ class ColorDots extends StatelessWidget {
           RoundedIconBtn(press: () {}, icon: Icons.add),
         ],
       ),
+    );
+  }
+
+  GestureDetector buildColorDots(int index) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selectedColor = index;
+        });
+      },
+      child: ColorDot(color: widget.product.colors[index],
+              isSelected: selectedColor == index,
+            ),
     );
   }
 }

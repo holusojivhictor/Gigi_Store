@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/rounded_icon_btn.dart';
-import 'package:gigi_store/constants.dart';
 
 import '../../../size_config.dart';
 
@@ -27,7 +26,7 @@ class CustomAppBar extends PreferredSize {
             Container(
               padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
               decoration: BoxDecoration(
-                color: Constants.white,
+                color: Color(0xFFF6F7F9),
                 borderRadius: BorderRadius.circular(14),
               ),
               child: Row(

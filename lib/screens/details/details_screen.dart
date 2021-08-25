@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gigi_store/constants.dart';
 import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/details/components/body.dart';
 
@@ -10,7 +11,7 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final arguments = ModalRoute.of(context)!.settings.arguments as ProductDetailsArguments;
     return Scaffold(
-      backgroundColor: Color(0xFFF5F6F9),
+      backgroundColor: Constants.white,
       appBar: CustomAppBar(rating: arguments.product.rating),
       body: Body(product: arguments.product),
     );
