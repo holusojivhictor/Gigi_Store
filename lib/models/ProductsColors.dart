@@ -49,10 +49,10 @@ List<ProductsColors> demoProductsColorsPad = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_blue_1.jpg",
-        "assets/images/ps4_console_blue_2.jpg",
-        "assets/images/ps4_console_blue_3.jpg",
-        "assets/images/ps4_console_blue_4.jpg",
+        "assets/images/ps4_console_black_1.jpg",
+        "assets/images/ps4_console_black_2.jpg",
+        "assets/images/ps4_console_black_3.jpg",
+        "assets/images/ps4_console_black_4.jpg",
       ],
     ),
   ),
@@ -83,39 +83,24 @@ List<ProductsColors> demoProductsColorsShorts = [
     productsColorsType: ProductsColorsType(
       images: [
         "assets/images/Image Popular Product 2.png",
-        "assets/images/ps4_console_red_2.jpg",
-        "assets/images/ps4_console_red_3.jpg",
-        "assets/images/ps4_console_red_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_blue_1.jpg",
-        "assets/images/ps4_console_blue_2.jpg",
-        "assets/images/ps4_console_blue_3.jpg",
-        "assets/images/ps4_console_blue_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_gold_1.jpg",
-        "assets/images/ps4_console_gold_2.jpg",
-        "assets/images/ps4_console_gold_3.jpg",
-        "assets/images/ps4_console_gold_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_white_1.png",
-        "assets/images/ps4_console_white_2.png",
-        "assets/images/ps4_console_white_3.png",
-        "assets/images/ps4_console_white_4.png",
       ],
     ),
   ),
@@ -125,40 +110,30 @@ List<ProductsColors> demoProductsColorsGloves = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/glap.png",
-        "assets/images/ps4_console_red_2.jpg",
-        "assets/images/ps4_console_red_3.jpg",
-        "assets/images/ps4_console_red_4.jpg",
+        "assets/images/gloves_omega_xc_blue_pairs_1.png",
+        "assets/images/gloves_omega_xc_blue_pairs_2.png",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_blue_1.jpg",
-        "assets/images/ps4_console_blue_2.jpg",
-        "assets/images/ps4_console_blue_3.jpg",
-        "assets/images/ps4_console_blue_4.jpg",
+        "assets/images/gloves_enduro_alpha_r_1.png",
+        "assets/images/gloves_enduro_alpha_r_2.png",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_gold_1.jpg",
-        "assets/images/ps4_console_gold_2.jpg",
-        "assets/images/ps4_console_gold_3.jpg",
-        "assets/images/ps4_console_gold_4.jpg",
+        "assets/images/Sarung-Tangan-Sepeda-Polygon-Road-Sigma-Green_1.png",
+        "assets/images/Sarung-Tangan-Sepeda-Polygon-Road-Sigma-Green_2.png",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_white_1.png",
-        "assets/images/ps4_console_white_2.png",
-        "assets/images/ps4_console_white_3.png",
-        "assets/images/ps4_console_white_4.png",
       ],
     ),
   ),
@@ -168,40 +143,28 @@ List<ProductsColors> demoProductsColorsHeadSet = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/wireless headset.png",
-        "assets/images/ps4_console_red_2.jpg",
-        "assets/images/ps4_console_red_3.jpg",
-        "assets/images/ps4_console_red_4.jpg",
+        "assets/images/wireless_headset_1.png",
+        "assets/images/wireless_headset_2.png",
+        "assets/images/wireless_headset_3.png",
+        "assets/images/wireless_headset_4.png",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_blue_1.jpg",
-        "assets/images/ps4_console_blue_2.jpg",
-        "assets/images/ps4_console_blue_3.jpg",
-        "assets/images/ps4_console_blue_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_gold_1.jpg",
-        "assets/images/ps4_console_gold_2.jpg",
-        "assets/images/ps4_console_gold_3.jpg",
-        "assets/images/ps4_console_gold_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/ps4_console_white_1.png",
-        "assets/images/ps4_console_white_2.png",
-        "assets/images/ps4_console_white_3.png",
-        "assets/images/ps4_console_white_4.png",
       ],
     ),
   ),
