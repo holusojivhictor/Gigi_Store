@@ -14,8 +14,8 @@ class RoundedIconBtn extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(getProportionateScreenWidth(2)),
       child: SizedBox(
-        height: getProportionateScreenWidth(20),
-        width: getProportionateScreenWidth(20),
+        height: getProportionateScreenWidth(17),
+        width: getProportionateScreenWidth(17),
         child: TextButton(
           style: ButtonStyle(
             padding: MaterialStateProperty.all(EdgeInsets.zero),

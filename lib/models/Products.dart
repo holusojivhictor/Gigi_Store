@@ -3,7 +3,7 @@ import 'package:gigi_store/models/ProductsColors.dart';
 
 class Product {
   final AllProductsColors productsColors;
-  final String title, description, price;
+  final String title, description, price, fullDescription;
   final List<String> images;
   final List<Color> colors;
   final double rating;
@@ -14,6 +14,7 @@ class Product {
     required this.images,
     required this.title,
     required this.description,
+    required this.fullDescription,
     required this.colors,
     required this.price,
     this.rating = 0.0,
@@ -40,6 +41,7 @@ List<Product> demoProducts = [
     ],
     productsColors: allProductsColors[0],
     title: "Wireless Controller for PS4",
+    fullDescription: fullDescription,
     description: description,
     price: r"$64.99",
     rating: 4.8,
@@ -55,6 +57,7 @@ List<Product> demoProducts = [
     ],
     productsColors: allProductsColors[1],
     title: "Nike Sport White - Man Pant",
+    fullDescription: fullDescription,
     description: description,
     price: r"$50.99",
     rating: 4.1,
@@ -71,6 +74,7 @@ List<Product> demoProducts = [
     ],
     productsColors: allProductsColors[2],
     title: "Gloves XC Omega - Polygon",
+    fullDescription: fullDescription,
     description: description,
     price: r"$36.99",
     rating: 4.1,
@@ -86,6 +90,7 @@ List<Product> demoProducts = [
     ],
     productsColors: allProductsColors[3],
     title: "H800 Logitech Headset",
+    fullDescription: fullDescription,
     description: description,
     price: r"$20.99",
     rating: 4.1,
@@ -94,3 +99,6 @@ List<Product> demoProducts = [
 ];
 
 const String description = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing...";
+
+const String fullDescription = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing "
+    "and all sorts of things, this here is me just rambling cos I don't have content for this. So, just take it like that. All right, bye";

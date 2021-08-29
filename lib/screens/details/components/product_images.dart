@@ -21,8 +21,21 @@ class ProductImages extends StatefulWidget {
 
 class _ProductImagesState extends State<ProductImages> {
   int selectedImage = 0;
-
   int selectedColor = 0;
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -58,9 +71,18 @@ class _ProductImagesState extends State<ProductImages> {
                       (index) => buildColorDots(index),
                 ),
                 Spacer(),
-                RoundedIconBtn(press: () {}, icon: Icons.remove),
-                SizedBox(width: getProportionateScreenWidth(6)),
-                RoundedIconBtn(press: () {}, icon: Icons.add),
+                RoundedIconBtn(
+                  press: _decrementCounter,
+                  icon: Icons.remove,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(4)),
+                  child: Text("$_counter pcs", style: TextStyle(fontSize: getProportionateScreenWidth(7), fontStyle: FontStyle.italic)),
+                ),
+                RoundedIconBtn(
+                  press: _incrementCounter,
+                  icon: Icons.add,
+                ),
               ],
             ),
           ),

@@ -4,14 +4,20 @@ import 'package:gigi_store/models/Products.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
-class ProductDescription extends StatelessWidget {
+class ProductDescription extends StatefulWidget {
   const ProductDescription({
     Key? key,
-    required this.product, required this.pressOnSeeMore,
+    required this.product,
   }) : super(key: key);
 
   final Product product;
-  final GestureTapCallback pressOnSeeMore;
+
+  @override
+  _ProductDescriptionState createState() => _ProductDescriptionState();
+}
+
+class _ProductDescriptionState extends State<ProductDescription> {
+  bool pressed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +28,7 @@ class ProductDescription extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: getProportionateScreenWidth(10),
           ),
-          child: Text(product.title, style: Theme.of(context).textTheme.headline6),
+          child: Text(widget.product.title, style: Theme.of(context).textTheme.headline6),
         ),
         const SizedBox(height: 5),
         Align(
@@ -31,7 +37,7 @@ class ProductDescription extends StatelessWidget {
             padding: EdgeInsets.all(getProportionateScreenWidth(5)),
             width: getProportionateScreenWidth(25),
             decoration: BoxDecoration(
-                color: product.isFavourite
+                color: widget.product.isFavourite
                     ? Color(0xFFFFE6E6)
                     : Color(0xFFF5F6F9),
                 borderRadius: BorderRadius.only(
@@ -41,9 +47,10 @@ class ProductDescription extends StatelessWidget {
             ),
             child: Icon(Icons.favorite,
               size: getProportionateScreenWidth(9),
-              color: product.isFavourite
+              color: widget.product.isFavourite
                   ? Color(0xFFFF4848)
-                  : Color(0xFFD8DEE4),),
+                  : Color(0xFFD8DEE4),
+            ),
           ),
         ),
         Padding(
@@ -52,18 +59,22 @@ class ProductDescription extends StatelessWidget {
             right: getProportionateScreenWidth(30),
           ),
           child: Text(
-            product.description,
+            pressed ? widget.product.fullDescription : widget.product.description,
             style: TextStyle(fontSize: getProportionateScreenWidth(7)),
-            maxLines: 3,
           ),
         ),
+        if (pressed == false)
         Padding(
           padding: EdgeInsets.symmetric(
             horizontal: getProportionateScreenWidth(10),
             vertical: 10,
           ),
           child: GestureDetector(
-            onTap: pressOnSeeMore,
+            onTap: () {
+              setState(() {
+                pressed = true;
+              });
+            },
             child: Row(
               children: [
                 Text("See More Detail",

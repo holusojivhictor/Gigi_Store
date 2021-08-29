@@ -25,7 +25,6 @@ class Body extends StatelessWidget {
               children: [
                 ProductDescription(
                   product: product,
-                  pressOnSeeMore: () {},
                 ),
                 Column(
                   children: [
