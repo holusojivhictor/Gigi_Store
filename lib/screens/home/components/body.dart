@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/screens/home/components/popular_products.dart';
+import 'package:gigi_store/screens/home/components/recently_viewed.dart';
 import 'package:gigi_store/screens/home/components/special_offers.dart';
 import 'package:gigi_store/size_config.dart';
 
@@ -24,6 +25,8 @@ class Body extends StatelessWidget {
             SpecialOffers(),
             SizedBox(height: getProportionateScreenWidth(15)),
             PopularProducts(),
+            SizedBox(height: getProportionateScreenWidth(15)),
+            RecentlyViewed(),
             SizedBox(height: getProportionateScreenWidth(15)),
           ],
         ),

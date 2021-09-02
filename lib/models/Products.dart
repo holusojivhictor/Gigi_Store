@@ -98,6 +98,77 @@ List<Product> demoProducts = [
   ),
 ];
 
+List<Product> recentlyViewed = [
+  Product(
+    images: [
+      "assets/images/gaming_chair_black_1.jpg",
+      "assets/images/gaming_chair_blue_1.jpg",
+      "assets/images/gaming_chair_gold_1.jpg",
+      "assets/images/gaming_chair_red_1.jpg",
+    ],
+    colors: [
+      Colors.black,
+      Colors.blue,
+      Color(0xFFDECB9C),
+      Color(0xFFF6625E),
+    ],
+    productsColors: allProductsColors[4],
+    title: "AutoFull Gaming Chair High Back",
+    fullDescription: fullDescription,
+    description: description,
+    price: r"$229.99",
+    rating: 4.4,
+    isFavourite: false,
+  ),
+  Product(
+    images: [
+      "assets/images/mouse_black_1.jpg",
+    ],
+    colors: [
+      Colors.black,
+      Colors.white,
+    ],
+    productsColors: allProductsColors[5],
+    title: "Redragon RGB Wired Gaming Mouse",
+    fullDescription: fullDescription,
+    description: description,
+    price: r"$50.99",
+    rating: 4.3,
+  ),
+  Product(
+    images: [
+      "assets/images/glap.png",
+    ],
+    colors: [
+      Colors.blue,
+      Colors.red,
+      Colors.green,
+    ],
+    productsColors: allProductsColors[2],
+    title: "Gloves XC Omega - Polygon",
+    fullDescription: fullDescription,
+    description: description,
+    price: r"$36.99",
+    rating: 4.1,
+    isFavourite: true,
+  ),
+  Product(
+    images: [
+      "assets/images/wireless headset.png",
+    ],
+    colors: [
+      Colors.black,
+    ],
+    productsColors: allProductsColors[3],
+    title: "H800 Logitech Headset",
+    fullDescription: fullDescription,
+    description: description,
+    price: r"$20.99",
+    rating: 4.1,
+    isFavourite: true,
+  ),
+];
+
 const String description = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing...";
 
 const String fullDescription = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing "

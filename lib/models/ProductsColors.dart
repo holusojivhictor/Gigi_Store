@@ -32,6 +32,11 @@ List<AllProductsColors> allProductsColors = [
   AllProductsColors(
     allProductsColors: demoProductsColorsHeadSet,
   ),
+  AllProductsColors(
+    allProductsColors: recentlyViewedChair,
+  ),
+  AllProductsColors(
+    allProductsColors: recentlyViewedMouse,),
 ];
 
 
@@ -153,6 +158,67 @@ List<ProductsColors> demoProductsColorsHeadSet = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> recentlyViewedChair = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/gaming_chair_black_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/gaming_chair_blue_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/gaming_chair_gold_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/gaming_chair_red_1.jpg",
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> recentlyViewedMouse = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/mouse_black_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/mouse_white_1.jpg",
+        "assets/images/mouse_white_2.jpg",
       ],
     ),
   ),

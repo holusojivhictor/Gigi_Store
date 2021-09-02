@@ -77,7 +77,13 @@ class _ProductImagesState extends State<ProductImages> {
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(4)),
-                  child: Text("$_counter pcs", style: TextStyle(fontSize: getProportionateScreenWidth(7), fontStyle: FontStyle.italic)),
+                  child: Text("$_counter pcs",
+                    style: TextStyle(
+                      fontSize: getProportionateScreenWidth(7),
+                      fontStyle: FontStyle.italic,
+                      color: Colors.grey,
+                    ),
+                  ),
                 ),
                 RoundedIconBtn(
                   press: _incrementCounter,
