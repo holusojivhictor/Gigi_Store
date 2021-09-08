@@ -36,7 +36,11 @@ List<AllProductsColors> allProductsColors = [
     allProductsColors: recentlyViewedChair,
   ),
   AllProductsColors(
-    allProductsColors: recentlyViewedMouse,),
+    allProductsColors: recentlyViewedMouse,
+  ),
+  AllProductsColors(
+    allProductsColors: recentlyViewedActionFigure,
+  ),
 ];
 
 
@@ -225,6 +229,66 @@ List<ProductsColors> recentlyViewedMouse = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> recentlyViewedActionFigure = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/goku_action_figure_1.jpg",
+        "assets/images/goku_action_figure_2.jpg",
+        "assets/images/goku_action_figure_3.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> recentlyViewedKeyboard = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
       ],
     ),
   ),
