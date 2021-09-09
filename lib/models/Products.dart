@@ -89,7 +89,7 @@ List<Product> demoProducts = [
       Colors.black,
     ],
     productsColors: allProductsColors[3],
-    title: "H800 Logitech Headset",
+    title: "H800 Black Logitech Headset",
     fullDescription: fullDescription,
     description: description,
     price: r"$20.99",
@@ -101,7 +101,7 @@ List<Product> demoProducts = [
 List<Product> recentlyViewed = [
   Product(
     images: [
-      "assets/images/gaming_chair_black_1.jpg",
+      "assets/images/gaming_chair_black_1.png",
       "assets/images/gaming_chair_blue_1.jpg",
       "assets/images/gaming_chair_gold_1.jpg",
       "assets/images/gaming_chair_red_1.jpg",
@@ -122,7 +122,7 @@ List<Product> recentlyViewed = [
   ),
   Product(
     images: [
-      "assets/images/mouse_black_1.jpg",
+      "assets/images/mouse_black_1.png",
     ],
     colors: [
       Colors.black,
@@ -137,7 +137,7 @@ List<Product> recentlyViewed = [
   ),
   Product(
     images: [
-      "assets/images/goku_action_figure_1.jpg",
+      "assets/images/goku_action_figure_1.png",
     ],
     colors: [
       Colors.orange,
@@ -152,7 +152,7 @@ List<Product> recentlyViewed = [
   ),
   Product(
     images: [
-      "assets/images/keyboard_mouse_black_1.jpg",
+      "assets/images/keyboard_mouse_black_1.png",
     ],
     colors: [
       Colors.black,

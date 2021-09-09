@@ -30,6 +30,7 @@ class RecentlyViewed extends StatelessWidget {
                     },
                   ),
               ),
+              SizedBox(width: getProportionateScreenWidth(10)),
             ],
           ),
         ),

@@ -186,7 +186,7 @@ List<ProductsColors> recentlyViewedChair = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/gaming_chair_black_1.jpg",
+        "assets/images/gaming_chair_black_1.png",
       ],
     ),
   ),
@@ -217,7 +217,7 @@ List<ProductsColors> recentlyViewedMouse = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/mouse_black_1.jpg",
+        "assets/images/mouse_black_1.png",
       ],
     ),
   ),
@@ -247,7 +247,7 @@ List<ProductsColors> recentlyViewedActionFigure = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/goku_action_figure_1.jpg",
+        "assets/images/goku_action_figure_1.png",
         "assets/images/goku_action_figure_2.jpg",
         "assets/images/goku_action_figure_3.jpg",
       ],
@@ -277,7 +277,7 @@ List<ProductsColors> recentlyViewedKeyboard = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.jpg",
+        "assets/images/keyboard_mouse_black_1.png",
       ],
     ),
   ),
