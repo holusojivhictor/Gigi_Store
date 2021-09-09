@@ -41,6 +41,9 @@ List<AllProductsColors> allProductsColors = [
   AllProductsColors(
     allProductsColors: recentlyViewedActionFigure,
   ),
+  AllProductsColors(
+    allProductsColors: recentlyViewedKeyboard,
+  ),
 ];
 
 
