@@ -226,16 +226,13 @@ List<Product> recentlyViewed = [
 List<Product> samsungSmartPhonesProducts = [
   Product(
     images: [
-      "assets/images/ps4_console_white_1.png",
-      "assets/images/ps4_console_white_2.png",
-      "assets/images/ps4_console_white_3.png",
-      "assets/images/ps4_console_white_4.png",
+      "assets/images/samsung_a32_black_1.png",
     ],
     colors: [
-      Color(0xFFF6625E),
-      Colors.black,
-      Color(0xFFDECB9C),
-      Colors.white,
+      Color(0xFF282828),
+      Color(0xFF94C0D9),
+      Color(0xFFD7D4E5),
+      Color(0xFFF5F5F7),
     ],
     productsColors: allProductsColors[8],
     title: "Samsung Galaxy A32 5G 64gb Metro Pcs by T-mobile",
@@ -251,10 +248,12 @@ List<Product> samsungSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/Image Popular Product 2.png",
+      "assets/images/samsung_a21s_black_1.png",
     ],
     colors: [
-      Colors.white,
+      Color(0xFF282B3A),
+      Color(0xFFDFE4E0),
+      Color(0xFF344190),
     ],
     productsColors: allProductsColors[9],
     title: "Samsung Galaxy A21S - 64GB (GSM unlocked) 6.5' Duos T-mobile",
@@ -269,12 +268,10 @@ List<Product> samsungSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/glap.png",
+      "assets/images/samsung_s10e_black_1.png",
     ],
     colors: [
-      Colors.blue,
-      Colors.red,
-      Colors.green,
+      Color(0xFF181C25),
     ],
     productsColors: allProductsColors[10],
     title: "New Samsung Galaxy S10e G970U GSM Unlocked T-mobile AT&T",
@@ -290,10 +287,10 @@ List<Product> samsungSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/wireless headset.png",
+      "assets/images/samsung_s10_plus_silver_1.png",
     ],
     colors: [
-      Colors.black,
+      Color(0xFFE6E2E1),
     ],
     productsColors: allProductsColors[11],
     title: "Samsung Galaxy S10 Plus SM-G975U 128gb Black Fedex",
@@ -311,16 +308,12 @@ List<Product> samsungSmartPhonesProducts = [
 List<Product> appleSmartPhonesProducts = [
   Product(
     images: [
-      "assets/images/ps4_console_white_1.png",
-      "assets/images/ps4_console_white_2.png",
-      "assets/images/ps4_console_white_3.png",
-      "assets/images/ps4_console_white_4.png",
+      "assets/images/iphone_7_silver_1.png",
     ],
     colors: [
-      Color(0xFFF6625E),
-      Colors.black,
-      Color(0xFFDECB9C),
-      Colors.white,
+      Color(0xFFEAEAEA),
+      Color(0xFF1D1E22),
+      Color(0xFFC2B7A5),
     ],
     productsColors: allProductsColors[12],
     title: "Apple iPhone 7 32GB - Factory Unlocked Smartphone",
@@ -336,10 +329,11 @@ List<Product> appleSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/Image Popular Product 2.png",
+      "assets/images/iphone_xr_black_1.png",
     ],
     colors: [
-      Colors.white,
+      Color(0xFF1C1B20),
+      Color(0xFFC81004),
     ],
     productsColors: allProductsColors[13],
     title: "Apple iPhone XR 64GB Factory Unlocked Smartphone AT&T Verizon",
@@ -354,12 +348,14 @@ List<Product> appleSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/glap.png",
+      "assets/images/iphone_12_mini_black_1.png",
     ],
     colors: [
-      Colors.blue,
-      Colors.red,
-      Colors.green,
+      Color(0xFF161118),
+      Color(0xFF01305A),
+      Color(0xFFD2F0D8),
+      Color(0xFFF8272A),
+      Color(0xFFADA4DB),
     ],
     productsColors: allProductsColors[14],
     title: "Apple iphone 12 Mini 5G 64GB 128GB 256GB Unlocked Grade A+",
@@ -375,13 +371,15 @@ List<Product> appleSmartPhonesProducts = [
   ),
   Product(
     images: [
-      "assets/images/wireless headset.png",
+      "assets/images/iphone_xs_gold_1.png",
     ],
     colors: [
-      Colors.black,
+      Color(0xFFFBDBC2),
+      Color(0xFF27262B),
+      Color(0xFFE2E2E0),
     ],
     productsColors: allProductsColors[15],
-    title: "Apple iphone 11 Unlocked 64GB 128GB 256GB|Verizon AT&T T-Mobile",
+    title: "Apple iphone XS Unlocked 64GB 128GB|Verizon AT&T T-Mobile",
     fullDescription: fullDescription,
     description: description,
     price: 484.99,

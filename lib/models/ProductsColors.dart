@@ -66,7 +66,7 @@ List<AllProductsColors> allProductsColors = [
     allProductsColors: appleSmartPhonesProductsIphone12,
   ),
   AllProductsColors(
-    allProductsColors: appleSmartPhonesProductsIphone11,
+    allProductsColors: appleSmartPhonesProductsIphoneXS,
   ),
 ];
 
@@ -331,27 +331,40 @@ List<ProductsColors> samsungSmartPhonesProductsA32 = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/samsung_a32_black_1.png",
+        "assets/images/samsung_a32_black_2.jpg",
+        "assets/images/samsung_a32_black_3.jpg",
+        "assets/images/samsung_a32_black_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/samsung_a32_blue_1.jpg",
+        "assets/images/samsung_a32_blue_2.jpg",
+        "assets/images/samsung_a32_blue_3.jpg",
+        "assets/images/samsung_a32_blue_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
+        "assets/images/samsung_a32_pink_1.jpg",
+        "assets/images/samsung_a32_pink_2.jpg",
+        "assets/images/samsung_a32_pink_3.jpg",
+        "assets/images/samsung_a32_pink_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
+        "assets/images/samsung_a32_white_1.jpg",
+        "assets/images/samsung_a32_white_2.jpg",
+        "assets/images/samsung_a32_white_3.jpg",
+        "assets/images/samsung_a32_white_4.jpg",
       ],
     ),
   ),
@@ -361,21 +374,28 @@ List<ProductsColors> samsungSmartPhonesProductsA21S = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/samsung_a21s_black_1.png",
+        "assets/images/samsung_a21s_black_2.jpg",
+        "assets/images/samsung_a21s_black_3.jpg",
+        "assets/images/samsung_a21s_black_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/samsung_a21s_silver_1.jpg",
+        "assets/images/samsung_a21s_silver_2.jpg",
+        "assets/images/samsung_a21s_silver_3.jpg",
+        "assets/images/samsung_a21s_silver_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
+        "assets/images/samsung_a21s_blue_1.jpg",
+        "assets/images/samsung_a21s_blue_2.jpg",
       ],
     ),
   ),
@@ -391,28 +411,26 @@ List<ProductsColors> samsungSmartPhonesProductsS10E = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/samsung_s10e_black_1.png",
+        "assets/images/samsung_s10e_black_2.jpg",
+        "assets/images/samsung_s10e_black_3.jpg",
+        "assets/images/samsung_s10e_black_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
-      ],
+      images: [],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
-      ],
+      images: [],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-      ],
+      images: [],
     ),
   ),
 ];
@@ -421,28 +439,26 @@ List<ProductsColors> samsungSmartPhonesProductsS10Plus = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/samsung_s10_plus_silver_1.png",
+        "assets/images/samsung_s10_plus_silver_2.jpg",
+        "assets/images/samsung_s10_plus_silver_3.jpg",
+        "assets/images/samsung_s10_plus_silver_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
-      ],
+      images: [],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
-      ],
+      images: [],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-      ],
+      images: [],
     ),
   ),
 ];
@@ -451,28 +467,32 @@ List<ProductsColors> appleSmartPhonesProductsIphone7 = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/iphone_7_silver_1.png",
+        "assets/images/iphone_7_silver_2.jpg",
+        "assets/images/iphone_7_silver_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/iphone_7_black_1.jpg",
+        "assets/images/iphone_7_black_2.jpg",
+        "assets/images/iphone_7_black_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
+        "assets/images/iphone_7_gold_1.jpg",
+        "assets/images/iphone_7_gold_2.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-      ],
+      images: [],
     ),
   ),
 ];
@@ -481,28 +501,25 @@ List<ProductsColors> appleSmartPhonesProductsIphoneXR = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/iphone_xr_black_1.png",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/iphone_xr_red_1.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
-      ],
+      images: [],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
-      images: [
-      ],
+      images: [],
     ),
   ),
 ];
@@ -511,51 +528,75 @@ List<ProductsColors> appleSmartPhonesProductsIphone12 = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/iphone_12_mini_black_1.png",
+        "assets/images/iphone_12_mini_black_2.jpg",
+        "assets/images/iphone_12_mini_black_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/iphone_12_mini_blue_1.jpg",
+        "assets/images/iphone_12_mini_blue_2.jpg",
+        "assets/images/iphone_12_mini_blue_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
+        "assets/images/iphone_12_mini_green_1.jpg",
+        "assets/images/iphone_12_mini_green_2.jpg",
+        "assets/images/iphone_12_mini_green_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
+        "assets/images/iphone_12_mini_red_1.jpg",
+        "assets/images/iphone_12_mini_red_2.jpg",
+        "assets/images/iphone_12_mini_red_3.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/iphone_12_mini_purple_1.jpg",
+        "assets/images/iphone_12_mini_purple_2.jpg",
       ],
     ),
   ),
 ];
 
-List<ProductsColors> appleSmartPhonesProductsIphone11 = [
+List<ProductsColors> appleSmartPhonesProductsIphoneXS = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_black_1.png",
+        "assets/images/iphone_xs_gold_1.png",
+        "assets/images/iphone_xs_gold_2.jpg",
+        "assets/images/iphone_xs_gold_3.jpg",
+        "assets/images/iphone_xs_gold_4.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_white_1.jpg",
+        "assets/images/iphone_xs_black_1.jpg",
+        "assets/images/iphone_xs_black_2.jpg",
+        "assets/images/iphone_xs_black_3.jpg",
       ],
     ),
   ),
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [
-        "assets/images/keyboard_mouse_pink_1.jpg",
+        "assets/images/iphone_xs_silver_1.jpg",
+        "assets/images/iphone_xs_silver_2.jpg",
+        "assets/images/iphone_xs_silver_3.jpg",
       ],
     ),
   ),

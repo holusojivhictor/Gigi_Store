@@ -47,6 +47,7 @@ class _ProductImagesState extends State<ProductImages> {
             child: Image.asset(widget.product.productsColors.allProductsColors[selectedColor].productsColorsType.images[selectedImage]),
           ),
         ),
+        SizedBox(height: getProportionateScreenHeight(10)),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

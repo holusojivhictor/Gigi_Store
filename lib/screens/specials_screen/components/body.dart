@@ -8,6 +8,7 @@ import 'package:gigi_store/size_config.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -25,12 +26,12 @@ class Body extends StatelessWidget {
                     SizedBox(height: getProportionateScreenWidth(10)),
                     ...List.generate(
                       allCategories[index].allCategoriesProducts.length,
-                      (index) => AltProductCard(
-                        product: allCategories[index].allCategoriesProducts[index],
+                      (next) => AltProductCard(
+                        product: allCategories[index].allCategoriesProducts[next],
                         press: () {
                           Navigator.pushNamed(context, DetailsScreen.routeName,
                             arguments: ProductDetailsArguments(
-                                product: allCategories[index].allCategoriesProducts[index]),
+                                product: allCategories[index].allCategoriesProducts[next]),
                           );
                         },
                         pressMenu: () {},
