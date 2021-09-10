@@ -46,7 +46,7 @@ class ProductCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(product.price,
+                  Text("\$${product.price}",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(7),
                       fontWeight: FontWeight.w600,

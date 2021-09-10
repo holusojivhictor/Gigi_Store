@@ -3,10 +3,10 @@ import 'package:gigi_store/models/ProductsColors.dart';
 
 class Product {
   final AllProductsColors productsColors;
-  final String title, description, price, fullDescription;
+  final String title, description, fullDescription, condition, manufacturer;
   final List<String> images;
   final List<Color> colors;
-  final double rating;
+  final double rating, price, quantitySold;
   final bool isFavourite, isPopular;
 
   Product ({
@@ -17,6 +17,9 @@ class Product {
     required this.fullDescription,
     required this.colors,
     required this.price,
+    required this.quantitySold,
+    required this.condition,
+    required this.manufacturer,
     this.rating = 0.0,
     this.isFavourite = false,
     this.isPopular = false,
@@ -43,10 +46,13 @@ List<Product> demoProducts = [
     title: "Wireless Controller for PS4",
     fullDescription: fullDescription,
     description: description,
-    price: r"$64.99",
+    price: 64.99,
     rating: 4.8,
     isFavourite: true,
     isPopular: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -59,9 +65,12 @@ List<Product> demoProducts = [
     title: "Nike Sport White - Man Pant",
     fullDescription: fullDescription,
     description: description,
-    price: r"$50.99",
+    price: 50.99,
     rating: 4.1,
     isPopular: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -76,10 +85,13 @@ List<Product> demoProducts = [
     title: "Gloves XC Omega - Polygon",
     fullDescription: fullDescription,
     description: description,
-    price: r"$36.99",
+    price: 36.99,
     rating: 4.1,
     isFavourite: true,
     isPopular: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -92,9 +104,12 @@ List<Product> demoProducts = [
     title: "H800 Black Logitech Headset",
     fullDescription: fullDescription,
     description: description,
-    price: r"$20.99",
+    price: 20.99,
     rating: 4.1,
     isFavourite: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
 ];
 
@@ -116,9 +131,12 @@ List<Product> recentlyViewed = [
     title: "AutoFull Gaming Chair High Back",
     fullDescription: fullDescription,
     description: description,
-    price: r"$229.99",
+    price: 229.99,
     rating: 4.4,
     isFavourite: false,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -132,8 +150,11 @@ List<Product> recentlyViewed = [
     title: "Redragon RGB Wired Gaming Mouse",
     fullDescription: fullDescription,
     description: description,
-    price: r"$40.99",
+    price: 40.99,
     rating: 4.3,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -146,9 +167,12 @@ List<Product> recentlyViewed = [
     title: "Dragon Ball Super Action Figure - Goku",
     fullDescription: fullDescription,
     description: description,
-    price: r"$66.99",
+    price: 66.99,
     rating: 4.6,
     isFavourite: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
   ),
   Product(
     images: [
@@ -163,8 +187,96 @@ List<Product> recentlyViewed = [
     title: "Gaming Keyboard and Mouse Combo",
     fullDescription: fullDescription,
     description: description,
-    price: r"$10.99",
+    price: 10.99,
     rating: 4.0,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
+  ),
+];
+
+List<Product> smartPhonesProducts = [
+  Product(
+    images: [
+      "assets/images/ps4_console_white_1.png",
+      "assets/images/ps4_console_white_2.png",
+      "assets/images/ps4_console_white_3.png",
+      "assets/images/ps4_console_white_4.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Colors.black,
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    productsColors: allProductsColors[0],
+    title: "Samsung Galaxy A32 5G 64gb Metro Pcs by T-mobile",
+    fullDescription: fullDescription,
+    description: description,
+    price: 176.99,
+    rating: 4.8,
+    isFavourite: true,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Samsung",
+    quantitySold: 21,
+  ),
+  Product(
+    images: [
+      "assets/images/Image Popular Product 2.png",
+    ],
+    colors: [
+      Colors.white,
+    ],
+    productsColors: allProductsColors[1],
+    title: "Samsung Galaxy A21S - 64GB (GSM unlocked) 6.5' Duos T-mobile",
+    fullDescription: fullDescription,
+    description: description,
+    price: 191.99,
+    rating: 4.1,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Samsung",
+    quantitySold: 1069,
+  ),
+  Product(
+    images: [
+      "assets/images/glap.png",
+    ],
+    colors: [
+      Colors.blue,
+      Colors.red,
+      Colors.green,
+    ],
+    productsColors: allProductsColors[2],
+    title: "New Samsung Galaxy S10e G970U GSM Unlocked T-mobile AT&T",
+    fullDescription: fullDescription,
+    description: description,
+    price: 249.99,
+    rating: 4.1,
+    isFavourite: true,
+    isPopular: true,
+    condition: "Open Box",
+    manufacturer: "Samsung",
+    quantitySold: 25,
+  ),
+  Product(
+    images: [
+      "assets/images/wireless headset.png",
+    ],
+    colors: [
+      Colors.black,
+    ],
+    productsColors: allProductsColors[3],
+    title: "Samsung Galaxy S10 Plus SM-G975U 128gb Black Fedex",
+    fullDescription: fullDescription,
+    description: description,
+    price: 298.99,
+    rating: 4.1,
+    isFavourite: true,
+    condition: "Open Box",
+    manufacturer: "Samsung",
+    quantitySold: 2460,
   ),
 ];
 
