@@ -8,31 +8,41 @@ import 'package:gigi_store/size_config.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: getProportionateScreenWidth(20)),
-        SectionTitle(
-          text: "Samsung",
-          press: () {},
-        ),
-        SizedBox(height: getProportionateScreenWidth(10)),
-        Column(
-          children: [
-            ...List.generate(
-              smartPhonesProducts.length,
-                (index) => AltProductCard(
-                  product: smartPhonesProducts[index],
-                  press: () {
-                    Navigator.pushNamed(context, DetailsScreen.routeName,
-                        arguments: ProductDetailsArguments(product: smartPhonesProducts[index]),
-                    );
-                  },
-                  pressMenu: () {},
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Column(
+            children: [
+              ...List.generate(
+                allCategories.length,
+                (index) => Column(
+                  children: [
+                    SizedBox(height: getProportionateScreenWidth(10)),
+                    SectionTitle(
+                      text: allCategories[index].sectionTitle,
+                      press: () {},
+                    ),
+                    SizedBox(height: getProportionateScreenWidth(10)),
+                    ...List.generate(
+                      allCategories[index].allCategoriesProducts.length,
+                      (index) => AltProductCard(
+                        product: allCategories[index].allCategoriesProducts[index],
+                        press: () {
+                          Navigator.pushNamed(context, DetailsScreen.routeName,
+                            arguments: ProductDetailsArguments(
+                                product: allCategories[index].allCategoriesProducts[index]),
+                          );
+                        },
+                        pressMenu: () {},
+                      ),
+                    ),
+                  ],
                 ),
-            ),
-          ],
-        ),
-      ],
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

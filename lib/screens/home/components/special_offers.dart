@@ -26,7 +26,7 @@ class SpecialOffers extends StatelessWidget {
               SpecialOfferCard(
                 image: "assets/images/open-laptop.jpg",
                 category: "Smartphones",
-                numOfBrands: 5,
+                numOfBrands: 4,
                 press: () {
                   Navigator.pushNamed(context, SpecialsScreen.routeName);
                 },

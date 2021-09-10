@@ -44,6 +44,30 @@ List<AllProductsColors> allProductsColors = [
   AllProductsColors(
     allProductsColors: recentlyViewedKeyboard,
   ),
+  AllProductsColors(
+    allProductsColors: samsungSmartPhonesProductsA32,
+  ),
+  AllProductsColors(
+    allProductsColors: samsungSmartPhonesProductsA21S,
+  ),
+  AllProductsColors(
+    allProductsColors: samsungSmartPhonesProductsS10E,
+  ),
+  AllProductsColors(
+    allProductsColors: samsungSmartPhonesProductsS10Plus,
+  ),
+  AllProductsColors(
+    allProductsColors: appleSmartPhonesProductsIphone7,
+  ),
+  AllProductsColors(
+    allProductsColors: appleSmartPhonesProductsIphoneXR,
+  ),
+  AllProductsColors(
+    allProductsColors: appleSmartPhonesProductsIphone12,
+  ),
+  AllProductsColors(
+    allProductsColors: appleSmartPhonesProductsIphone11,
+  ),
 ];
 
 
@@ -274,6 +298,246 @@ List<ProductsColors> recentlyViewedActionFigure = [
 ];
 
 List<ProductsColors> recentlyViewedKeyboard = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> samsungSmartPhonesProductsA32 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> samsungSmartPhonesProductsA21S = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> samsungSmartPhonesProductsS10E = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> samsungSmartPhonesProductsS10Plus = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> appleSmartPhonesProductsIphone7 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> appleSmartPhonesProductsIphoneXR = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> appleSmartPhonesProductsIphone12 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_black_1.png",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_white_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/keyboard_mouse_pink_1.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+      ],
+    ),
+  ),
+];
+
+List<ProductsColors> appleSmartPhonesProductsIphone11 = [
   ProductsColors(
     productsColorsType: ProductsColorsType(
       images: [

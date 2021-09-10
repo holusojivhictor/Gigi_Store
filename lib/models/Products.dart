@@ -26,6 +26,33 @@ class Product {
 });
 }
 
+
+class Categories {
+  final List<Product> allCategoriesProducts;
+  final String sectionTitle;
+
+  Categories({required this.allCategoriesProducts, required this.sectionTitle});
+}
+
+List<Categories> allCategories = [
+  Categories(
+    sectionTitle: "Samsung",
+    allCategoriesProducts: samsungSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Apple",
+    allCategoriesProducts: appleSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Samsung",
+    allCategoriesProducts: samsungSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Apple",
+    allCategoriesProducts: appleSmartPhonesProducts,
+  ),
+];
+
 //The demo products
 
 List<Product> demoProducts = [
@@ -195,7 +222,8 @@ List<Product> recentlyViewed = [
   ),
 ];
 
-List<Product> smartPhonesProducts = [
+
+List<Product> samsungSmartPhonesProducts = [
   Product(
     images: [
       "assets/images/ps4_console_white_1.png",
@@ -209,7 +237,7 @@ List<Product> smartPhonesProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    productsColors: allProductsColors[0],
+    productsColors: allProductsColors[8],
     title: "Samsung Galaxy A32 5G 64gb Metro Pcs by T-mobile",
     fullDescription: fullDescription,
     description: description,
@@ -228,7 +256,7 @@ List<Product> smartPhonesProducts = [
     colors: [
       Colors.white,
     ],
-    productsColors: allProductsColors[1],
+    productsColors: allProductsColors[9],
     title: "Samsung Galaxy A21S - 64GB (GSM unlocked) 6.5' Duos T-mobile",
     fullDescription: fullDescription,
     description: description,
@@ -248,7 +276,7 @@ List<Product> smartPhonesProducts = [
       Colors.red,
       Colors.green,
     ],
-    productsColors: allProductsColors[2],
+    productsColors: allProductsColors[10],
     title: "New Samsung Galaxy S10e G970U GSM Unlocked T-mobile AT&T",
     fullDescription: fullDescription,
     description: description,
@@ -267,7 +295,7 @@ List<Product> smartPhonesProducts = [
     colors: [
       Colors.black,
     ],
-    productsColors: allProductsColors[3],
+    productsColors: allProductsColors[11],
     title: "Samsung Galaxy S10 Plus SM-G975U 128gb Black Fedex",
     fullDescription: fullDescription,
     description: description,
@@ -277,6 +305,91 @@ List<Product> smartPhonesProducts = [
     condition: "Open Box",
     manufacturer: "Samsung",
     quantitySold: 2460,
+  ),
+];
+
+List<Product> appleSmartPhonesProducts = [
+  Product(
+    images: [
+      "assets/images/ps4_console_white_1.png",
+      "assets/images/ps4_console_white_2.png",
+      "assets/images/ps4_console_white_3.png",
+      "assets/images/ps4_console_white_4.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Colors.black,
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    productsColors: allProductsColors[12],
+    title: "Apple iPhone 7 32GB - Factory Unlocked Smartphone",
+    fullDescription: fullDescription,
+    description: description,
+    price: 108.99,
+    rating: 4.4,
+    isFavourite: false,
+    isPopular: true,
+    condition: "Pre-Owned",
+    manufacturer: "Apple",
+    quantitySold: 231,
+  ),
+  Product(
+    images: [
+      "assets/images/Image Popular Product 2.png",
+    ],
+    colors: [
+      Colors.white,
+    ],
+    productsColors: allProductsColors[13],
+    title: "Apple iPhone XR 64GB Factory Unlocked Smartphone AT&T Verizon",
+    fullDescription: fullDescription,
+    description: description,
+    price: 339.99,
+    rating: 4.5,
+    isPopular: true,
+    condition: "Pre-Owned",
+    manufacturer: "Apple",
+    quantitySold: 114,
+  ),
+  Product(
+    images: [
+      "assets/images/glap.png",
+    ],
+    colors: [
+      Colors.blue,
+      Colors.red,
+      Colors.green,
+    ],
+    productsColors: allProductsColors[14],
+    title: "Apple iphone 12 Mini 5G 64GB 128GB 256GB Unlocked Grade A+",
+    fullDescription: fullDescription,
+    description: description,
+    price: 664.99,
+    rating: 4.8,
+    isFavourite: true,
+    isPopular: true,
+    condition: "Refurbished",
+    manufacturer: "Apple",
+    quantitySold: 245,
+  ),
+  Product(
+    images: [
+      "assets/images/wireless headset.png",
+    ],
+    colors: [
+      Colors.black,
+    ],
+    productsColors: allProductsColors[15],
+    title: "Apple iphone 11 Unlocked 64GB 128GB 256GB|Verizon AT&T T-Mobile",
+    fullDescription: fullDescription,
+    description: description,
+    price: 484.99,
+    rating: 4.2,
+    isFavourite: true,
+    condition: "Refurbished",
+    manufacturer: "Apple",
+    quantitySold: 290,
   ),
 ];
 
