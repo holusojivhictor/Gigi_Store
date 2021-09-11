@@ -11,7 +11,6 @@ import 'package:gigi_store/screens/otp_screen/otp_screen.dart';
 import 'package:gigi_store/screens/profile/profile_screen.dart';
 import 'package:gigi_store/screens/sign_in/sign_in.dart';
 import 'package:gigi_store/screens/sign_up/sign_up_screen.dart';
-import 'package:gigi_store/screens/specials_screen/specials_screen.dart';
 import 'package:gigi_store/screens/splash/onboarding.dart';
 
 final Map<String, WidgetBuilder> routes = {
@@ -28,5 +27,4 @@ final Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName: (context) => ProfileScreen(),
   FavouritesScreen.routeName: (context) => FavouritesScreen(),
   ChatsScreen.routeName: (context) => ChatsScreen(),
-  SpecialsScreen.routeName: (context) => SpecialsScreen(),
 };

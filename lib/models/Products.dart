@@ -6,7 +6,8 @@ class Product {
   final String title, description, fullDescription, condition, manufacturer;
   final List<String> images;
   final List<Color> colors;
-  final double rating, price, quantitySold;
+  final double rating, price;
+  final int quantitySold;
   final bool isFavourite, isPopular;
 
   Product ({
@@ -34,7 +35,31 @@ class Categories {
   Categories({required this.allCategoriesProducts, required this.sectionTitle});
 }
 
-List<Categories> allCategories = [
+class Specials{
+  final List<Categories> allSpecials;
+  Specials({required this.allSpecials});
+}
+
+List<Categories> allCategoriesSmartphones = [
+  Categories(
+    sectionTitle: "Samsung",
+    allCategoriesProducts: samsungSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Apple",
+    allCategoriesProducts: appleSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Xiaomi",
+    allCategoriesProducts: xiaomiSmartPhonesProducts,
+  ),
+  Categories(
+    sectionTitle: "Huawei",
+    allCategoriesProducts: huaweiSmartPhonesProducts,
+  ),
+];
+
+List<Categories> allCategoriesFashion = [
   Categories(
     sectionTitle: "Samsung",
     allCategoriesProducts: samsungSmartPhonesProducts,
@@ -51,6 +76,11 @@ List<Categories> allCategories = [
     sectionTitle: "Apple",
     allCategoriesProducts: appleSmartPhonesProducts,
   ),
+];
+
+List<Specials> allCategories = [
+  Specials(allSpecials: allCategoriesSmartphones),
+  Specials(allSpecials: allCategoriesFashion),
 ];
 
 //The demo products
@@ -232,7 +262,7 @@ List<Product> samsungSmartPhonesProducts = [
       Color(0xFF282828),
       Color(0xFF94C0D9),
       Color(0xFFD7D4E5),
-      Color(0xFFF5F5F7),
+      Colors.white,
     ],
     productsColors: allProductsColors[8],
     title: "Samsung Galaxy A32 5G 64gb Metro Pcs by T-mobile",
@@ -388,6 +418,165 @@ List<Product> appleSmartPhonesProducts = [
     condition: "Refurbished",
     manufacturer: "Apple",
     quantitySold: 290,
+  ),
+];
+
+
+List<Product> xiaomiSmartPhonesProducts = [
+  Product(
+    images: [
+      "assets/images/xiaomi_note_9_black_1.png",
+    ],
+    colors: [
+      Color(0xFF5C5C5C),
+      Color(0xFF037673),
+      Color(0xFF52559C),
+    ],
+    productsColors: allProductsColors[16],
+    title: "Xiaomi Redmi 9 64GB, 4GB RAM 6.53 AI Quad Camera, LTE Factory Unlocked",
+    fullDescription: fullDescription,
+    description: description,
+    price: 164.99,
+    rating: 4.5,
+    isFavourite: false,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Xiaomi",
+    quantitySold: 431,
+  ),
+  Product(
+    images: [
+      "assets/images/xiaomi_mi_11_blue_1.png",
+    ],
+    colors: [
+      Color(0xFF7988B1),
+      Color(0xFF232323),
+    ],
+    productsColors: allProductsColors[17],
+    title: "Xiaomi Mi 11 Lite (128GB, 6GB) 6.55 90HZ AMOLED, 64MP Triple Camera, Snapdragon 732G",
+    fullDescription: fullDescription,
+    description: description,
+    price: 329.99,
+    rating: 4.7,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Xiaomi",
+    quantitySold: 140,
+  ),
+  Product(
+    images: [
+      "assets/images/xiaomi_mi_10T_silver_1.png",
+    ],
+    colors: [
+      Color(0xFF6D6D77),
+    ],
+    productsColors: allProductsColors[18],
+    title: "Xiaomi Mi 10T - Smartphone 6GB + 128GB, Dual Sim, Alexa Hands-Free, Grigio(Lunar Silver)",
+    fullDescription: fullDescription,
+    description: description,
+    price: 384.99,
+    rating: 4.8,
+    isFavourite: true,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Xiaomi",
+    quantitySold: 425,
+  ),
+  Product(
+    images: [
+      "assets/images/xiaomi_note_10_black_1.png",
+    ],
+    colors: [
+      Color(0xFF2B2C30),
+    ],
+    productsColors: allProductsColors[19],
+    title: "Xiaomi Redmi Note 10 | 128GB 4GB RAM | GSM LTE Factory Unlocked Smartphone | International Model",
+    fullDescription: fullDescription,
+    description: description,
+    price: 274.99,
+    rating: 4.3,
+    isFavourite: true,
+    condition: "Brand New",
+    manufacturer: "Xiaomi",
+    quantitySold: 290,
+  ),
+];
+
+
+List<Product> huaweiSmartPhonesProducts = [
+  Product(
+    images: [
+      "assets/images/huawei_p30_blue_1.png",
+    ],
+    colors: [
+      Color(0xFF5DE3FE),
+    ],
+    productsColors: allProductsColors[20],
+    title: "Huawei P30 128GB + 6GB RAM 6.1 LTE Factory Unlocked GSM Smartphone Breathing Crystal",
+    fullDescription: fullDescription,
+    description: description,
+    price: 478.99,
+    rating: 4.5,
+    isFavourite: false,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Huawei",
+    quantitySold: 131,
+  ),
+  Product(
+    images: [
+      "assets/images/huawei_p40_black_1.png",
+    ],
+    colors: [
+      Color(0xFF0F1014),
+    ],
+    productsColors: allProductsColors[21],
+    title: "Huawei P40 Lite Dual SIm 4G 128GB 6GB RAM International Version Midnight Black",
+    fullDescription: fullDescription,
+    description: description,
+    price: 234.99,
+    rating: 4.7,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Huawei",
+    quantitySold: 120,
+  ),
+  Product(
+    images: [
+      "assets/images/huawei_p30_pro_pacific_blue_1.png",
+    ],
+    colors: [
+      Color(0xFF00E0F3),
+    ],
+    productsColors: allProductsColors[22],
+    title: "Huawei P30 Pro 128GB + 8GB RAM 40MP LTE Factory Unlocked (International Version)",
+    fullDescription: fullDescription,
+    description: description,
+    price: 679.99,
+    rating: 4.4,
+    isFavourite: true,
+    isPopular: true,
+    condition: "Brand New",
+    manufacturer: "Huawei",
+    quantitySold: 45,
+  ),
+  Product(
+    images: [
+      "assets/images/huawei_mate_40_black_1.png",
+    ],
+    colors: [
+      Color(0xFF121214),
+    ],
+    productsColors: allProductsColors[23],
+    title: "Huawei Mate 40 Pro 5G 256GB 8GB RAM Internal Version - Black",
+    fullDescription: fullDescription,
+    description: description,
+    price: 799.99,
+    rating: 4.5,
+    isFavourite: true,
+    condition: "Brand New",
+    manufacturer: "Huawei",
+    quantitySold: 115,
   ),
 ];
 

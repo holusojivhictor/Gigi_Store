@@ -70,7 +70,6 @@ class AltProductCard extends StatelessWidget {
                       children: [
                         Text("${product.rating}",
                           style: TextStyle(color: Constants.black, fontSize: getProportionateScreenWidth(5)),
-                          maxLines: 2,
                         ),
                         const SizedBox(width: 3),
                         Icon(Icons.favorite, size: 10),
@@ -82,6 +81,12 @@ class AltProductCard extends StatelessWidget {
                         fontSize: getProportionateScreenWidth(7),
                         fontWeight: FontWeight.w600,
                         color: Constants.kPrimaryColor,
+                      ),
+                    ),
+                    SizedBox(height: 2),
+                    Text("${product.quantitySold} sold",
+                      style: TextStyle(
+                        fontSize: getProportionateScreenWidth(5),
                       ),
                     ),
                   ],

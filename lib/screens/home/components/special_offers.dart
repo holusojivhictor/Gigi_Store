@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/home/components/section_title.dart';
 import 'package:gigi_store/screens/home/components/special_offer_card.dart';
 import 'package:gigi_store/screens/specials_screen/specials_screen.dart';
@@ -28,14 +29,34 @@ class SpecialOffers extends StatelessWidget {
                 category: "Smartphones",
                 numOfBrands: 4,
                 press: () {
-                  Navigator.pushNamed(context, SpecialsScreen.routeName);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return SpecialsScreen(
+                          appBarText: "Smartphones",
+                          specialsIndex: allCategories[0],
+                        );
+                      },
+                    ),
+                  );
                 },
               ),
               SpecialOfferCard(
                 image: "assets/images/a-piece-of-garment.jpg",
                 category: "Fashion",
                 numOfBrands: 10,
-                press: () {},
+                press: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return SpecialsScreen(
+                          appBarText: "Fashion",
+                          specialsIndex: allCategories[1],
+                        );
+                      },
+                    ),
+                  );
+                },
               ),
               SizedBox(width: getProportionateScreenWidth(10)),
             ],

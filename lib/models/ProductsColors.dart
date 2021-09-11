@@ -68,6 +68,30 @@ List<AllProductsColors> allProductsColors = [
   AllProductsColors(
     allProductsColors: appleSmartPhonesProductsIphoneXS,
   ),
+  AllProductsColors(
+    allProductsColors: xiaomiSmartPhonesProductsRedmi9,
+  ),
+  AllProductsColors(
+    allProductsColors: xiaomiSmartPhonesProductsMi11,
+  ),
+  AllProductsColors(
+    allProductsColors: xiaomiSmartPhonesProductsMi10T,
+  ),
+  AllProductsColors(
+    allProductsColors: xiaomiSmartPhonesProductsRedmi10,
+  ),
+  AllProductsColors(
+    allProductsColors: huaweiSmartPhonesProductsP30,
+  ),
+  AllProductsColors(
+    allProductsColors: huaweiSmartPhonesProductsP40,
+  ),
+  AllProductsColors(
+    allProductsColors: huaweiSmartPhonesProductsP30Pro,
+  ),
+  AllProductsColors(
+    allProductsColors: huaweiSmartPhonesProductsMate40,
+  ),
 ];
 
 
@@ -604,6 +628,250 @@ List<ProductsColors> appleSmartPhonesProductsIphoneXS = [
     productsColorsType: ProductsColorsType(
       images: [
       ],
+    ),
+  ),
+];
+
+
+List<ProductsColors> xiaomiSmartPhonesProductsRedmi9 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_note_9_black_1.png",
+        "assets/images/xiaomi_note_9_black_2.jpg",
+        "assets/images/xiaomi_note_9_black_3.jpg",
+        "assets/images/xiaomi_note_9_black_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_note_9_green_1.jpg",
+        "assets/images/xiaomi_note_9_green_2.jpg",
+        "assets/images/xiaomi_note_9_green_3.jpg",
+        "assets/images/xiaomi_note_9_green_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_note_9_purple_1.jpg",
+        "assets/images/xiaomi_note_9_purple_2.jpg",
+        "assets/images/xiaomi_note_9_purple_3.jpg",
+        "assets/images/xiaomi_note_9_purple_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+List<ProductsColors> xiaomiSmartPhonesProductsMi11 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_mi_11_blue_1.png",
+        "assets/images/xiaomi_mi_11_blue_2.jpg",
+        "assets/images/xiaomi_mi_11_blue_3.jpg",
+        "assets/images/xiaomi_mi_11_blue_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_mi_11_black_1.jpg",
+        "assets/images/xiaomi_mi_11_black_2.jpg",
+        "assets/images/xiaomi_mi_11_black_3.jpg",
+        "assets/images/xiaomi_mi_11_black_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+
+
+List<ProductsColors> xiaomiSmartPhonesProductsMi10T = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_mi_10T_silver_1.png",
+        "assets/images/xiaomi_mi_10T_silver_2.jpg",
+        "assets/images/xiaomi_mi_10T_silver_3.jpg",
+        "assets/images/xiaomi_mi_10T_silver_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+
+List<ProductsColors> xiaomiSmartPhonesProductsRedmi10 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/xiaomi_note_10_black_1.png",
+        "assets/images/xiaomi_note_10_black_2.jpg",
+        "assets/images/xiaomi_note_10_black_3.jpg",
+        "assets/images/xiaomi_note_10_black_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+
+List<ProductsColors> huaweiSmartPhonesProductsP30 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/huawei_p30_blue_1.png",
+        "assets/images/huawei_p30_blue_2.jpg",
+        "assets/images/huawei_p30_blue_3.jpg",
+        "assets/images/huawei_p30_blue_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+List<ProductsColors> huaweiSmartPhonesProductsP40 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/huawei_p40_black_1.png",
+        "assets/images/huawei_p40_black_2.jpg",
+        "assets/images/huawei_p40_black_3.jpg",
+        "assets/images/huawei_p40_black_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+
+List<ProductsColors> huaweiSmartPhonesProductsP30Pro = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/huawei_p30_pro_pacific_blue_1.png",
+        "assets/images/huawei_p30_pro_pacific_blue_2.jpg",
+        "assets/images/huawei_p30_pro_pacific_blue_3.jpg",
+        "assets/images/huawei_p30_pro_pacific_blue_4.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+];
+
+List<ProductsColors> huaweiSmartPhonesProductsMate40 = [
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [
+        "assets/images/huawei_mate_40_black_1.png",
+        "assets/images/huawei_mate_40_black_2.jpg",
+        "assets/images/huawei_mate_40_black_3.jpg",
+      ],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
+    ),
+  ),
+  ProductsColors(
+    productsColorsType: ProductsColorsType(
+      images: [],
     ),
   ),
 ];

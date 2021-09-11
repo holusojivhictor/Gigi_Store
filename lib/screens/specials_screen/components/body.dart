@@ -6,6 +6,9 @@ import 'package:gigi_store/screens/home/components/section_title.dart';
 import 'package:gigi_store/size_config.dart';
 
 class Body extends StatelessWidget {
+  final Specials special;
+  Body({required this.special});
+
   @override
   Widget build(BuildContext context) {
 
@@ -15,23 +18,23 @@ class Body extends StatelessWidget {
           Column(
             children: [
               ...List.generate(
-                allCategories.length,
+                special.allSpecials.length,
                 (index) => Column(
                   children: [
                     SizedBox(height: getProportionateScreenWidth(10)),
                     SectionTitle(
-                      text: allCategories[index].sectionTitle,
+                      text: special.allSpecials[index].sectionTitle,
                       press: () {},
                     ),
                     SizedBox(height: getProportionateScreenWidth(10)),
                     ...List.generate(
-                      allCategories[index].allCategoriesProducts.length,
+                      special.allSpecials[index].allCategoriesProducts.length,
                       (next) => AltProductCard(
-                        product: allCategories[index].allCategoriesProducts[next],
+                        product: special.allSpecials[index].allCategoriesProducts[next],
                         press: () {
                           Navigator.pushNamed(context, DetailsScreen.routeName,
                             arguments: ProductDetailsArguments(
-                                product: allCategories[index].allCategoriesProducts[next]),
+                                product: special.allSpecials[index].allCategoriesProducts[next]),
                           );
                         },
                         pressMenu: () {},
