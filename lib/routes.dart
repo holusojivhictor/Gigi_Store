@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:gigi_store/components/notifications.dart';
 import 'package:gigi_store/screens/cart/cart_screen.dart';
 import 'package:gigi_store/screens/chats/chats_screen.dart';
 import 'package:gigi_store/screens/complete_profile/complete_profile_screen.dart';
@@ -27,4 +28,5 @@ final Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName: (context) => ProfileScreen(),
   FavouritesScreen.routeName: (context) => FavouritesScreen(),
   ChatsScreen.routeName: (context) => ChatsScreen(),
+  Notifications.routeName: (context) => Notifications(),
 };

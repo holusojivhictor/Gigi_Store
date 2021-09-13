@@ -6,12 +6,11 @@ import 'constants.dart';
 ThemeData theme(BuildContext context) {
   return ThemeData(
     appBarTheme: appBarTheme(),
-    primarySwatch: Colors.indigo,
     scaffoldBackgroundColor: Constants.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    accentColor: Constants.kPrimaryLightColor,
     textTheme: textTheme(context),
     inputDecorationTheme: inputDecorationTheme(),
+    colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.indigo).copyWith(secondary: Constants.kPrimaryLightColor),
   );
 }
 

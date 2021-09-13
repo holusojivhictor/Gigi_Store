@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gigi_store/components/notifications.dart';
 import 'package:gigi_store/screens/cart/cart_screen.dart';
 import 'package:gigi_store/screens/home/components/icon_btn_with_counter.dart';
 import 'package:gigi_store/screens/home/components/search_field.dart';
@@ -22,7 +23,7 @@ class HomeHeader extends StatelessWidget {
           IconBtnWithCounter(
             icon: Icons.notifications_outlined,
             numOfItems: 3,
-            press: () {},
+            press: () => Navigator.pushNamed(context, Notifications.routeName),
           ),
         ],
       ),

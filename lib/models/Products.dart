@@ -568,7 +568,7 @@ List<Product> huaweiSmartPhonesProducts = [
       Color(0xFF121214),
     ],
     productsColors: allProductsColors[23],
-    title: "Huawei Mate 40 Pro 5G 256GB 8GB RAM Internal Version - Black",
+    title: "Huawei Mate 40 Pro 5G 256GB 8GB RAM International Version - Black",
     fullDescription: fullDescription,
     description: description,
     price: 799.99,
