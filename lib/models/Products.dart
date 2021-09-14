@@ -3,7 +3,7 @@ import 'package:gigi_store/models/ProductsColors.dart';
 
 class Product {
   final AllProductsColors productsColors;
-  final String title, description, fullDescription, condition, manufacturer;
+  final String title, description, fullDescription, condition, manufacturer, notifTitle;
   final List<String> images;
   final List<Color> colors;
   final double rating, price;
@@ -21,6 +21,7 @@ class Product {
     required this.quantitySold,
     required this.condition,
     required this.manufacturer,
+    required this.notifTitle,
     this.rating = 0.0,
     this.isFavourite = false,
     this.isPopular = false,
@@ -110,6 +111,7 @@ List<Product> demoProducts = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -128,6 +130,7 @@ List<Product> demoProducts = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -149,6 +152,7 @@ List<Product> demoProducts = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -167,6 +171,7 @@ List<Product> demoProducts = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
 ];
 
@@ -194,6 +199,7 @@ List<Product> recentlyViewed = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -212,6 +218,7 @@ List<Product> recentlyViewed = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -230,6 +237,7 @@ List<Product> recentlyViewed = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -249,6 +257,7 @@ List<Product> recentlyViewed = [
     condition: "",
     manufacturer: "",
     quantitySold: 0,
+    notifTitle: "",
   ),
 ];
 
@@ -275,6 +284,7 @@ List<Product> samsungSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Samsung",
     quantitySold: 21,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -295,6 +305,7 @@ List<Product> samsungSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Samsung",
     quantitySold: 1069,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -314,6 +325,7 @@ List<Product> samsungSmartPhonesProducts = [
     condition: "Open Box",
     manufacturer: "Samsung",
     quantitySold: 25,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -332,6 +344,7 @@ List<Product> samsungSmartPhonesProducts = [
     condition: "Open Box",
     manufacturer: "Samsung",
     quantitySold: 2460,
+    notifTitle: "",
   ),
 ];
 
@@ -356,6 +369,7 @@ List<Product> appleSmartPhonesProducts = [
     condition: "Pre-Owned",
     manufacturer: "Apple",
     quantitySold: 231,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -375,6 +389,7 @@ List<Product> appleSmartPhonesProducts = [
     condition: "Pre-Owned",
     manufacturer: "Apple",
     quantitySold: 114,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -398,6 +413,7 @@ List<Product> appleSmartPhonesProducts = [
     condition: "Refurbished",
     manufacturer: "Apple",
     quantitySold: 245,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -418,6 +434,7 @@ List<Product> appleSmartPhonesProducts = [
     condition: "Refurbished",
     manufacturer: "Apple",
     quantitySold: 290,
+    notifTitle: "",
   ),
 ];
 
@@ -443,6 +460,7 @@ List<Product> xiaomiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Xiaomi",
     quantitySold: 431,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -462,6 +480,7 @@ List<Product> xiaomiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Xiaomi",
     quantitySold: 140,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -481,6 +500,7 @@ List<Product> xiaomiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Xiaomi",
     quantitySold: 425,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -499,6 +519,7 @@ List<Product> xiaomiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Xiaomi",
     quantitySold: 290,
+    notifTitle: "",
   ),
 ];
 
@@ -522,6 +543,7 @@ List<Product> huaweiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Huawei",
     quantitySold: 131,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -540,6 +562,7 @@ List<Product> huaweiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Huawei",
     quantitySold: 120,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -559,6 +582,7 @@ List<Product> huaweiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Huawei",
     quantitySold: 45,
+    notifTitle: "",
   ),
   Product(
     images: [
@@ -577,10 +601,78 @@ List<Product> huaweiSmartPhonesProducts = [
     condition: "Brand New",
     manufacturer: "Huawei",
     quantitySold: 115,
+    notifTitle: "",
   ),
 ];
 
-const String description = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing...";
+
+
+List<Product> notificationProducts = [
+  Product(
+    images: [
+      "assets/images/goku_action_figure_1.png",
+    ],
+    colors: [
+      Colors.orange,
+    ],
+    productsColors: allProductsColors[6],
+    title: "Dragon Ball Super Action Figure - Goku",
+    fullDescription: fullDescription,
+    description: description,
+    price: 66.99,
+    rating: 4.6,
+    isFavourite: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
+    notifTitle: "SELLER OFFER: US \$49.99",
+  ),
+  Product(
+    images: [
+      "assets/images/huawei_mate_40_black_1.png",
+    ],
+    colors: [
+      Color(0xFF121214),
+    ],
+    productsColors: allProductsColors[23],
+    title: "Huawei Mate 40 Pro 5G 256GB 8GB RAM International Version - Black",
+    fullDescription: fullDescription,
+    description: description,
+    price: 799.99,
+    rating: 4.5,
+    isFavourite: true,
+    condition: "Brand New",
+    manufacturer: "Huawei",
+    quantitySold: 115,
+    notifTitle: "WATCHED ITEM REMINDER",
+  ),
+  Product(
+    images: [
+      "assets/images/ps4_console_white_1.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Colors.black,
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    productsColors: allProductsColors[0],
+    title: "Wireless Controller for PS4",
+    fullDescription: fullDescription,
+    description: description,
+    price: 64.99,
+    rating: 4.8,
+    isFavourite: true,
+    isPopular: true,
+    condition: "",
+    manufacturer: "",
+    quantitySold: 0,
+    notifTitle: "SELLER OFFER: US \$59.99",
+  ),
+];
+
+const String description = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing "
+    "and this and that and the other thing...";
 
 const String fullDescription = "Wireless Controller for PS4 gives you what you want in your gaming experience from precision control to sharing "
-    "and all sorts of things, this here is me just rambling cos I don't have content for this. So, just take it like that. All right, bye";
+    "and this and that and the other thing, this here is me just rambling cos I don't have content for this. So, just take it like that. All right, bye";
