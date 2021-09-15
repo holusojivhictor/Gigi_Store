@@ -1,11 +1,21 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:gigi_store/authentication/google_auth/google_auth.dart';
 import 'package:gigi_store/components/no_account_text.dart';
 import 'package:gigi_store/components/social_card.dart';
 import 'package:gigi_store/constants.dart';
+import 'package:gigi_store/screens/login_success/login_success_screen.dart';
 import 'package:gigi_store/screens/sign_in/components/sign_form.dart';
 import 'package:gigi_store/size_config.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
+  @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  bool _isSigningIn = false;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,7 +45,19 @@ class Body extends StatelessWidget {
                   children: [
                     SocialCard(
                       icon: "assets/images/icons8-google-48.png",
-                      press: () {},
+                      press: () async {
+                        setState(() {
+                          _isSigningIn = true;
+                        });
+                        User? user = await GoogleAuthentication.signInWithGoogle(context: context);
+
+                        setState(() {
+                          _isSigningIn = false;
+                        });
+                        if (user != null) {
+                          Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                        }
+                      },
                     ),
                     SocialCard(
                       icon: "assets/images/logo-facebookpng-32214.png",

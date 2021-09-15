@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gigi_store">
+    package="com.morpheus.gigi_store">
    <application
         android:label="gigi_store"
         android:icon="@mipmap/ic_launcher">

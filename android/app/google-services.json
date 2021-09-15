@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "847649724035",
+    "project_id": "gigi-store",
+    "storage_bucket": "gigi-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847649724035:android:2955e7809b1bf9cfe3edb6",
+        "android_client_info": {
+          "package_name": "com.morpheus.gigi_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847649724035-ppfa8mi7l2fliemqais9fegkp6a5qad1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.morpheus.gigi_store",
+            "certificate_hash": "9676cd1abf04b6d51e46250ffdf8cd570dab44fd"
+          }
+        },
+        {
+          "client_id": "847649724035-52ii0br8rbgo4ql2e86f7as3ftn4ijp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxQPhMq0PXZBXlAubbtDmITbwtgHETroE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847649724035-52ii0br8rbgo4ql2e86f7as3ftn4ijp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

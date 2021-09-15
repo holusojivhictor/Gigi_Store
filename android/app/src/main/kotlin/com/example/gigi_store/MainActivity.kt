@@ -1,4 +1,4 @@
-package com.example.gigi_store
+package com.morpheus.gigi_store
 
 import io.flutter.embedding.android.FlutterActivity
 
