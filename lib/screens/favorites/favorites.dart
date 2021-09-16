@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:gigi_store/components/custom_bottom_nav_bar.dart';
 import 'package:gigi_store/components/icon_button_wout_counter.dart';
 import 'package:gigi_store/constants.dart';
-import 'package:gigi_store/models/Products.dart';
 import 'package:gigi_store/screens/cart/cart_screen.dart';
-import 'package:gigi_store/screens/specials_screen/components/body.dart';
+import 'package:gigi_store/screens/favorites/components/body.dart';
 
-class SpecialsScreen extends StatelessWidget {
-  static String routeName = "/specials_screen";
-  final String appBarText;
-  final Specials specialsIndex;
+import '../../enums.dart';
 
-  SpecialsScreen({required this.appBarText, required this.specialsIndex});
+class Favorites extends StatelessWidget {
+  static String routeName = "/favorites";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body: Body(special: specialsIndex),
+      body: Body(),
+      bottomNavigationBar: CustomBottomNavBar(
+        selectedMenu: MenuState.favorite,
+      ),
     );
   }
 
@@ -25,7 +26,7 @@ class SpecialsScreen extends StatelessWidget {
       backgroundColor: Constants.kSecondaryColor.withOpacity(0.2),
       automaticallyImplyLeading: false,
       title: Text(
-        appBarText,
+        "Favorites",
         style: TextStyle(color: Constants.black),
       ),
       actions: [

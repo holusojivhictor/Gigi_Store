@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/screens/chats/chats_screen.dart';
-import 'package:gigi_store/screens/favourites/favourites_screen.dart';
+import 'package:gigi_store/screens/favorites/favorites.dart';
 import 'package:gigi_store/screens/home/home_screen.dart';
 import 'package:gigi_store/screens/profile/profile_screen.dart';
 
@@ -46,9 +46,9 @@ class CustomBottomNavBar extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () => Navigator.pushNamed(context, FavouritesScreen.routeName),
+              onPressed: () => Navigator.pushNamed(context, Favorites.routeName),
               icon: Icon(Icons.favorite_outline,
-                color: MenuState.favourite == selectedMenu
+                color: MenuState.favorite == selectedMenu
                     ? Constants.kPrimaryColor
                     : inActiveIconColor,
               ),
