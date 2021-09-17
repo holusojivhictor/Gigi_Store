@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gigi Store</string>
+    <string name="facebook_app_id">225452266266864</string>
+    <string name="fb_login_protocol_scheme">fb225452266266864</string>
+    <string name="facebook_client_token">da53815baac6c3c9cf29ebd7fcf7ab5b</string>
+</resources>

@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:gigi_store/authentication/facebook_auth/facebook_auth.dart';
 import 'package:gigi_store/authentication/google_auth/google_auth.dart';
 import 'package:gigi_store/components/no_account_text.dart';
 import 'package:gigi_store/components/social_card.dart';
@@ -61,7 +62,19 @@ class _BodyState extends State<Body> {
                     ),
                     SocialCard(
                       icon: "assets/images/logo-facebookpng-32214.png",
-                      press: () {},
+                      press: () async {
+                        setState(() {
+                          _isSigningIn = true;
+                        });
+                        // User? user = (await FacebookLoginState.facebookLogIn(context: context)) as User?;
+
+                        setState(() {
+                          _isSigningIn = false;
+                        });
+                        /*if (user != null) {
+                          Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                        }*/
+                      },
                     ),
                     SocialCard(
                       icon: "assets/images/icons8-twitter-48.png",
