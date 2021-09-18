@@ -66,14 +66,11 @@ class _BodyState extends State<Body> {
                         setState(() {
                           _isSigningIn = true;
                         });
-                        // User? user = (await FacebookLoginState.facebookLogIn(context: context)) as User?;
-
+                        await FacebookLoginState().facebookLogIn(context: context);
                         setState(() {
                           _isSigningIn = false;
                         });
-                        /*if (user != null) {
                           Navigator.pushNamed(context, LogInSuccessScreen.routeName);
-                        }*/
                       },
                     ),
                     SocialCard(
