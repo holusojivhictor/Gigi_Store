@@ -1,6 +1,6 @@
 # gigi_store
 
-A new Flutter project.
+Ecommerce app store implemented with Flutter and Firebase.
 
 ## Getting Started
 
