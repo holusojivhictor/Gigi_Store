@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:gigi_store/size_config.dart';
 import 'package:provider/provider.dart';
 
 import 'messages.dart';
@@ -73,32 +72,23 @@ class MessageState extends ChangeNotifier {
 class MessageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Consumer<MessageState>(
-            builder: (context, appState, _) => Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (appState.loginState == ApplicationLoginState.loggedIn) ...[
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: getProportionateScreenWidth(10),
-                      vertical: getProportionateScreenWidth(5),
-                    ),
-                    child: Text('Discussion', style: TextStyle(fontSize: 20)),
-                  ),
-                  Messages(
-                    addMessage: (String message) =>
-                        appState.addMessageToBoard(message),
-                    messages: appState.messageBoards,
-                  ),
-                ],
+    return Column(
+      children: [
+        Consumer<MessageState>(
+          builder: (context, appState, _) => Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (appState.loginState == ApplicationLoginState.loggedIn) ...[
+                Messages(
+                  addMessage: (String message) =>
+                      appState.addMessageToBoard(message),
+                  messages: appState.messageBoards,
+                ),
               ],
-            ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

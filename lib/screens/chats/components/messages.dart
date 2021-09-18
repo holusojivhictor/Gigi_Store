@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:gigi_store/size_config.dart';
 
+import '../../../constants.dart';
+
 class MessageBoard {
   MessageBoard({required this.name, required this.message});
   final String name;
@@ -27,7 +29,7 @@ class _MessagesState extends State<Messages> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(5), vertical: getProportionateScreenWidth(10)),
+          padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(2), vertical: getProportionateScreenWidth(2)),
           child: Form(
             key: _formKey,
             child: Row(
@@ -35,9 +37,7 @@ class _MessagesState extends State<Messages> {
                 Expanded(
                   child: TextFormField(
                     controller: _controller,
-                    decoration: const InputDecoration(
-                      hintText: 'Leave a message',
-                    ),
+                    decoration: inputDecoration(),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Enter your message to continue';
@@ -46,22 +46,25 @@ class _MessagesState extends State<Messages> {
                     },
                   ),
                 ),
-                SizedBox(width: 10),
-                OutlinedButton(
-                  style: OutlinedButton.styleFrom(
-                      side: BorderSide(color: Colors.deepPurple)),
+                const SizedBox(width: 5),
+                TextButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                    ),
+                    side: MaterialStateProperty.all(
+                      BorderSide(color: Colors.deepPurple),
+                    ),
+                  ),
                   onPressed: () async {
                     if (_formKey.currentState!.validate()) {
                       await widget.addMessage(_controller.text);
                       _controller.clear();
                     }
                   },
-                  child: Row(
-                    children: [
-                      Icon(Icons.send),
-                      SizedBox(width: 4),
-                      Text('SEND'),
-                    ],
+                  child: Padding(
+                    padding: EdgeInsets.all(5),
+                    child: Icon(Icons.send),
                   ),
                 ),
               ],
@@ -79,6 +82,24 @@ class _MessagesState extends State<Messages> {
           ),
         SizedBox(height: 8),
       ],
+    );
+  }
+
+  InputDecoration inputDecoration() {
+    OutlineInputBorder outlineInputBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(30),
+      borderSide: BorderSide(color: Constants.kTextColor),
+      gapPadding: 10,
+    );
+    return InputDecoration(
+      hintText: 'Type a message',
+      contentPadding: EdgeInsets.symmetric(
+        horizontal: 30,
+        vertical: 15,
+      ),
+      enabledBorder: outlineInputBorder,
+      focusedBorder: outlineInputBorder,
+      border: outlineInputBorder,
     );
   }
 }

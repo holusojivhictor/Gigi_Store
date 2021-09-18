@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
@@ -38,8 +39,8 @@ AppBarTheme appBarTheme() {
   return AppBarTheme(
     color: Constants.white,
     elevation: 0,
-    brightness: Brightness.light,
+    systemOverlayStyle: SystemUiOverlayStyle.light,
     iconTheme: IconThemeData(color: Constants.black),
-    textTheme: TextTheme(headline6: TextStyle(color: Colors.black54, fontSize: 19)),
+    titleTextStyle: TextStyle(color: Colors.black54, fontSize: 19),
   );
 }

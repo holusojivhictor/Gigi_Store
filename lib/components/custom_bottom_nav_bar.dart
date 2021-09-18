@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/screens/chats/chats_screen.dart';
+import 'package:gigi_store/screens/chats/components/chat_page.dart';
 import 'package:gigi_store/screens/favorites/favorites.dart';
 import 'package:gigi_store/screens/home/home_screen.dart';
 import 'package:gigi_store/screens/profile/profile_screen.dart';
