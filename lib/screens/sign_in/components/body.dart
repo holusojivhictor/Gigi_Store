@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gigi_store/authentication/facebook_auth/facebook_auth.dart';
 import 'package:gigi_store/authentication/google_auth/google_auth.dart';
+import 'package:gigi_store/authentication/twitter_auth/twitter_auth.dart';
 import 'package:gigi_store/components/no_account_text.dart';
 import 'package:gigi_store/components/social_card.dart';
 import 'package:gigi_store/constants.dart';
@@ -70,12 +71,21 @@ class _BodyState extends State<Body> {
                         setState(() {
                           _isSigningIn = false;
                         });
-                          Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                        Navigator.pushNamed(context, LogInSuccessScreen.routeName);
                       },
                     ),
                     SocialCard(
                       icon: "assets/images/icons8-twitter-48.png",
-                      press: () {},
+                      press: () async {
+                        setState(() {
+                          _isSigningIn = true;
+                        });
+                        await FirebaseTwitterService().signInWithTwitter();
+                        setState(() {
+                          _isSigningIn = false;
+                        });
+                        Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                      },
                     ),
                   ],
                 ),
