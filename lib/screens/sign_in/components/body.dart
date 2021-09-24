@@ -64,14 +64,10 @@ class _BodyState extends State<Body> {
                     SocialCard(
                       icon: "assets/images/logo-facebookpng-32214.png",
                       press: () async {
-                        setState(() {
-                          _isSigningIn = true;
-                        });
-                        await FacebookLoginState().facebookLogIn(context: context);
-                        setState(() {
-                          _isSigningIn = false;
-                        });
-                        Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                        User? user = await FacebookLoginState().facebookLogIn(context: context) as User?;
+                        if (user != null) {
+                          Navigator.pushNamed(context, LogInSuccessScreen.routeName);
+                        }
                       },
                     ),
                     SocialCard(

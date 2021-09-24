@@ -3,6 +3,7 @@ import 'package:gigi_store/components/custom_bottom_nav_bar.dart';
 import 'package:gigi_store/components/icon_button_wout_counter.dart';
 import 'package:gigi_store/enums.dart';
 import 'package:gigi_store/screens/cart/cart_screen.dart';
+import 'package:gigi_store/screens/chats/components/chat_page.dart';
 import 'package:gigi_store/screens/chats/components/message_body.dart';
 
 import '../../constants.dart';
@@ -13,9 +14,18 @@ class ChatsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body: MessageBody(),
+      body: Column(
+        children: [],
+      ),
       bottomNavigationBar: CustomBottomNavBar(
         selectedMenu: MenuState.message,
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Constants.kPrimaryColor.withOpacity(0.8),
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ChatPage()));
+        },
+        child: Icon(Icons.add),
       ),
     );
   }
