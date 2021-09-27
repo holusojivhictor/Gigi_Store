@@ -19,7 +19,6 @@ class DetailsScreen extends StatelessWidget {
 }
 
 
-//Quick note, we also use our products here so we need to create an arguments class cos we are using routes
 class ProductDetailsArguments {
   final Product product;
 

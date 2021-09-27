@@ -47,31 +47,29 @@ class _MessagesState extends State<Messages> {
                   ),
                 ),
                 const SizedBox(width: 5),
-                TextButton(
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(
-                      RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                    ),
-                    side: MaterialStateProperty.all(
-                      BorderSide(color: Colors.deepPurple),
-                    ),
-                  ),
-                  onPressed: () async {
+                GestureDetector(
+                  onTap: () async {
                     if (_formKey.currentState!.validate()) {
                       await widget.addMessage(_controller.text);
                       _controller.clear();
                     }
                   },
-                  child: Padding(
-                    padding: EdgeInsets.all(5),
-                    child: Icon(Icons.send),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.deepPurple),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(11),
+                      child: Icon(Icons.send, color: Constants.kPrimaryColor),
+                    ),
                   ),
                 ),
               ],
             ),
           ),
         ),
-        SizedBox(height: 10),
+        /*SizedBox(height: 10),
         for (var message in widget.messages)
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
@@ -80,7 +78,7 @@ class _MessagesState extends State<Messages> {
               style: TextStyle(fontSize: 18),
             ),
           ),
-        SizedBox(height: 8),
+        SizedBox(height: 8),*/
       ],
     );
   }
