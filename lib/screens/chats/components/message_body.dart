@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'messages.dart';
 
@@ -66,29 +65,5 @@ class MessageState extends ChangeNotifier {
       'name': FirebaseAuth.instance.currentUser!.displayName,
       'userId': FirebaseAuth.instance.currentUser!.uid,
     });
-  }
-}
-
-class MessageBody extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Consumer<MessageState>(
-          builder: (context, appState, _) => Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              if (appState.loginState == ApplicationLoginState.loggedIn) ...[
-                Messages(
-                  addMessage: (String message) =>
-                      appState.addMessageToBoard(message),
-                  messages: appState.messageBoards,
-                ),
-              ],
-            ],
-          ),
-        ),
-      ],
-    );
   }
 }

@@ -10,16 +10,15 @@ class MessageBoard {
   final String message;
 }
 
-class Messages extends StatefulWidget {
-  Messages({required this.addMessage, required this.messages});
+class AddMessage extends StatefulWidget {
+  AddMessage({required this.addMessage});
   final FutureOr<void> Function(String message) addMessage;
-  final List<MessageBoard> messages;
 
   @override
-  State<Messages> createState() => _MessagesState();
+  State<AddMessage> createState() => _AddMessageState();
 }
 
-class _MessagesState extends State<Messages> {
+class _AddMessageState extends State<AddMessage> {
   final _formKey = GlobalKey<FormState>(debugLabel: '_MessagesState');
   final _controller = TextEditingController();
 
@@ -57,7 +56,7 @@ class _MessagesState extends State<Messages> {
                   child: Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(color: Colors.deepPurple),
+                      border: Border.all(color: Constants.kPrimaryColor),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(11),
@@ -69,16 +68,6 @@ class _MessagesState extends State<Messages> {
             ),
           ),
         ),
-        /*SizedBox(height: 10),
-        for (var message in widget.messages)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
-            child: Text(
-              '${message.name}: ${message.message}',
-              style: TextStyle(fontSize: 18),
-            ),
-          ),
-        SizedBox(height: 8),*/
       ],
     );
   }
@@ -86,7 +75,7 @@ class _MessagesState extends State<Messages> {
   InputDecoration inputDecoration() {
     OutlineInputBorder outlineInputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(30),
-      borderSide: BorderSide(color: Constants.kTextColor),
+      borderSide: BorderSide(color: Constants.kPrimaryColor),
       gapPadding: 10,
     );
     return InputDecoration(
@@ -98,6 +87,33 @@ class _MessagesState extends State<Messages> {
       enabledBorder: outlineInputBorder,
       focusedBorder: outlineInputBorder,
       border: outlineInputBorder,
+    );
+  }
+}
+
+
+class MessageDisplay extends StatefulWidget {
+  final List<MessageBoard> messages;
+  MessageDisplay({required this.messages});
+
+  @override
+  State<MessageDisplay> createState() => _MessageDisplayState();
+}
+
+class _MessageDisplayState extends State<MessageDisplay> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        for (var message in widget.messages)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
+            child: Text(
+              '${message.name}: ${message.message}',
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+      ],
     );
   }
 }

@@ -9,6 +9,7 @@ import 'chat_page.dart';
 
 class Contacts extends StatelessWidget {
   static String routeName = "contacts";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

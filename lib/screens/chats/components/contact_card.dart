@@ -22,13 +22,13 @@ class ContactCard extends StatelessWidget {
       title: Text(chatUsers.name,
         style: TextStyle(
           color: Constants.black,
-          fontSize: getProportionateScreenWidth(7),
+          fontSize: getProportionateScreenWidth(7.5),
         ),
       ),
       subtitle: Text(chatUsers.subtitle,
         style: TextStyle(
-          color: Constants.black,
-          fontSize: getProportionateScreenWidth(5),
+          color: Constants.black.withOpacity(0.6),
+          fontSize: getProportionateScreenWidth(6),
         ),
       ),
       trailing: Text(chatUsers.date,

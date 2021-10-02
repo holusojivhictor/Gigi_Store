@@ -4,6 +4,7 @@ import 'package:gigi_store/screens/cart/cart_screen.dart';
 import 'package:gigi_store/screens/chats/chats_screen.dart';
 import 'package:gigi_store/screens/chats/components/chat_page.dart';
 import 'package:gigi_store/screens/chats/components/contacts.dart';
+import 'package:gigi_store/screens/chats/components/messages.dart';
 import 'package:gigi_store/screens/complete_profile/complete_profile_screen.dart';
 import 'package:gigi_store/screens/details/details_screen.dart';
 import 'package:gigi_store/screens/favorites/favorites.dart';
