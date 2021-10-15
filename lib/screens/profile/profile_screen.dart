@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gigi_store/components/custom_bottom_nav_bar.dart';
 import 'package:gigi_store/screens/profile/components/body.dart';
-
-import '../../enums.dart';
 
 class ProfileScreen extends StatelessWidget {
   static String routeName = "/profile_screen";
@@ -16,9 +13,6 @@ class ProfileScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Body(),
-      bottomNavigationBar: CustomBottomNavBar(
-        selectedMenu: MenuState.profile,
-      ),
     );
   }
 }

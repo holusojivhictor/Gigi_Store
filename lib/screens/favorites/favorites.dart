@@ -15,9 +15,6 @@ class Favorites extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: Body(),
-      bottomNavigationBar: CustomBottomNavBar(
-        selectedMenu: MenuState.favorite,
-      ),
     );
   }
 

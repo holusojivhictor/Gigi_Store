@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/default_button.dart';
-import 'package:gigi_store/screens/home/home_screen.dart';
+import 'package:gigi_store/home_tab.dart';
+import 'package:gigi_store/models/tab_manager.dart';
+import 'package:provider/provider.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -42,7 +44,14 @@ class Body extends StatelessWidget {
             DefaultButton(
               text: "Back to Home",
               press: () {
-                Navigator.pushNamed(context, HomeScreen.routeName);
+                Navigator.push(context,
+                  MaterialPageRoute(
+                    builder: (context) => ChangeNotifierProvider(
+                      create: (context) => TabManager(),
+                      child: HomeTab(),
+                    ),
+                  ),
+                );
               },
             ),
           ],

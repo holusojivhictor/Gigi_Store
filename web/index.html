@@ -94,5 +94,28 @@
       loadMainDartJs();
     }
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: "AIzaSyAxQPhMq0PXZBXlAubbtDmITbwtgHETroE",
+      authDomain: "gigi_store.firebaseapp.com",
+      databaseURL: "https://gigi_store.firebaseio.com",
+      projectId: "gigi_store",
+      storageBucket: "gigi_store.appspot.com",
+      messagingSenderId: "847649724035",
+      appId: "1:847649724035:android:2955e7809b1bf9cfe3edb6",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
 </body>
 </html>

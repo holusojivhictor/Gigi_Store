@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/models/chat_users.dart';
 import 'package:gigi_store/screens/chats/components/message_body.dart';
-import 'package:gigi_store/screens/chats/components/messages.dart';
+import 'package:gigi_store/screens/chats/components/message_state.dart';
 import 'package:provider/provider.dart';
 
 import 'chat_app_bar.dart';

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gigi_store/screens/chats/chats_screen.dart';
-import 'package:gigi_store/screens/chats/components/chat_page.dart';
 import 'package:gigi_store/screens/favorites/favorites.dart';
 import 'package:gigi_store/screens/home/home_screen.dart';
+import 'package:gigi_store/screens/messaging/message_screen.dart';
 import 'package:gigi_store/screens/profile/profile_screen.dart';
 
 import '../constants.dart';
@@ -55,7 +54,7 @@ class CustomBottomNavBar extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () => Navigator.pushNamed(context, ChatsScreen.routeName),
+              onPressed: () => Navigator.pushNamed(context, MessageScreen.routeName),
               icon: Icon(Icons.bubble_chart_outlined,
                 color: MenuState.message == selectedMenu
                     ? Constants.kPrimaryColor
