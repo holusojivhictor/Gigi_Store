@@ -8,4 +8,10 @@ class TabManager extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void goToProfile(index) {
+    selectedTab = 3;
+
+    notifyListeners();
+  }
 }

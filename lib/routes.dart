@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
 import 'package:gigi_store/components/notifications.dart';
-import 'package:gigi_store/home_tab.dart';
 import 'package:gigi_store/screens/cart/cart_screen.dart';
 import 'package:gigi_store/screens/chats/chats_screen.dart';
 import 'package:gigi_store/screens/chats/components/chat_page.dart';
@@ -11,6 +10,7 @@ import 'package:gigi_store/screens/favorites/favorites.dart';
 import 'package:gigi_store/screens/forgot_password/forgot_password_screen.dart';
 import 'package:gigi_store/screens/home/home_screen.dart';
 import 'package:gigi_store/screens/login_success/login_success_screen.dart';
+import 'package:gigi_store/screens/messaging/components/user_profiles.dart';
 import 'package:gigi_store/screens/messaging/message_screen.dart';
 import 'package:gigi_store/screens/otp_screen/otp_screen.dart';
 import 'package:gigi_store/screens/profile/profile_screen.dart';
@@ -36,4 +36,5 @@ final Map<String, WidgetBuilder> routes = {
   ChatPage.routeName: (context) => ChatPage(),
   Contacts.routeName: (context) => Contacts(),
   MessageScreen.routeName: (context) => MessageScreen(),
+  UserProfiles.routeName: (context) => UserProfiles(),
 };

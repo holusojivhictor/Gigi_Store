@@ -5,7 +5,7 @@ import '../../../constants.dart';
 import '../../../size_config.dart';
 
 class ContactCard extends StatelessWidget {
-  final GestureTapCallback press;
+  final VoidCallback? press;
   final ChatUsers chatUsers;
   ContactCard({required this.press, required this.chatUsers});
 

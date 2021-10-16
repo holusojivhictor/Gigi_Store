@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gigi_store/components/default_button.dart';
 import 'package:gigi_store/home_tab.dart';
+import 'package:gigi_store/models/message_manager.dart';
 import 'package:gigi_store/models/tab_manager.dart';
+import 'package:gigi_store/screens/messaging/components/user_profiles.dart';
+import 'package:gigi_store/screens/messaging/message_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../../constants.dart';
@@ -46,8 +49,15 @@ class Body extends StatelessWidget {
               press: () {
                 Navigator.push(context,
                   MaterialPageRoute(
-                    builder: (context) => ChangeNotifierProvider(
-                      create: (context) => TabManager(),
+                    builder: (context) => MultiProvider(
+                      providers: [
+                        ChangeNotifierProvider(
+                          create: (context) => TabManager(),
+                        ),
+                        ChangeNotifierProvider(
+                          create: (context) => MessageManager(),
+                        ),
+                      ],
                       child: HomeTab(),
                     ),
                   ),
