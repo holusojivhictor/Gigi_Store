@@ -13,11 +13,11 @@ class UserProfiles extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<MessageManager>(
       create: (context) => MessageManager(),
-      child: Builder(builder: buildButton),
+      child: Builder(builder: buildContactCard),
     );
   }
 
-  Widget buildButton(BuildContext context) {
+  Widget buildContactCard(BuildContext context) {
     final manager = Provider.of<MessageManager>(context, listen: false);
     return Scaffold(
       body: SafeArea(
@@ -36,6 +36,7 @@ class UserProfiles extends StatelessWidget {
                             // Navigator.pop(context);
                           },
                           onUpdate: (item) {},
+                          chatUser: demoUsers[index],
                         )),
                     );
                   },
@@ -43,22 +44,6 @@ class UserProfiles extends StatelessWidget {
                 const Divider(height: 6),
               ],
             ),
-            ),
-            MaterialButton(
-              child: const Text("Explore"),
-              textColor: Colors.white,
-              color: Colors.black,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => MessagePage(
-                      onCreate: (item) {
-                        manager.addItem(item);
-                        // Navigator.pop(context);
-                      },
-                      onUpdate: (item) {},
-                    )),
-                );
-              },
             ),
           ],
         ),

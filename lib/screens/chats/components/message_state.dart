@@ -104,14 +104,31 @@ class _MessageDisplayState extends State<MessageDisplay> {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      reverse: true,
       children: [
         for (var message in widget.messages)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
-            child: Text(
-              '${message.name}: ${message.message}',
-              style: TextStyle(fontSize: 18),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                child: Container(
+                  constraints: BoxConstraints(
+                    maxWidth: 350,
+                  ),
+                  padding: EdgeInsets.all(Constants.kPadding),
+                  decoration: BoxDecoration(
+                    color: Colors.blueGrey.withOpacity(0.2),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  child: Text(
+                    '${message.message}',
+                    style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.right,
+                  ),
+                ),
+              ),
+            ],
           ),
       ],
     );
